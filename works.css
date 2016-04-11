@@ -1,0 +1,30 @@
+#works img{
+	width: 150px;
+	height: 80;
+}
+
+.thumbnails{
+	padding-left: 20px;
+}
+
+aside{
+	display: inline-block;
+}
+
+#small{
+	width: 23%;
+	height: 500px;
+}
+
+#large{
+	width: 77%;
+	height: 500px;
+	margin-top: 50px;
+	float: right;
+}
+
+#large iframe{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
