@@ -1,0 +1,38 @@
+#main-holder #imageHolder-right{
+	float: right;
+	width: 216px;
+	margin-left: 20px;
+}
+
+#imageHolder img{
+	width: 191px;
+	opacity: 0.9;
+}
+
+#imageHolder table{
+	margin: 0px auto;
+}
+
+#imageHolder-shirts img{
+	opacity: 0.8;
+}
+
+#space{
+	width: 50px;
+}
+
+figcaption{
+	text-align: center;
+}
+
+#imageHolder-animation img{
+	width: 412px;
+}
+
+#imageHolder-animation table{
+	margin: 0px 0px 20px 20px;
+}
+
+#imageHolder-animation{
+	float: right;
+}

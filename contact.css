@@ -1,0 +1,36 @@
+#main-holder table{
+	margin: 0px auto;
+}
+
+#main-holder .input{
+	border: none;
+	border-bottom: 2px solid #ccc;
+	background-color: #4D4D4D;
+	font-family: "Courier New", monospace;
+	font-size: 1.15em;
+	color: #ccc;
+}
+
+#main-holder textarea{
+	resize: none;
+	color: #ccc;
+}
+
+#main-holder button{
+	font-family: "Courier New", monospace;
+	font-size: 1.15em;
+	background-color: #4D4D4D;
+	border: none;
+	color: #ccc;
+	padding: 10px 15px;
+	margin: 5px;
+	float: right;
+	transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
+}
+
+#main-holder button:hover{
+	background-color:#3D3D3D;
+}

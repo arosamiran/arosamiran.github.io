@@ -1,0 +1,29 @@
+#main-holder{
+	padding: 50px;
+	text-align: left;
+}
+
+#photosPane img{
+	width: 216px;
+}
+
+#photosPane{
+	margin: 0px auto;
+	background-color: transparent;
+	width: 668px;
+	position: relative;
+}
+
+.hide{
+	visibility: hidden;
+}
+
+#photosPane ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#photosPane ul li{
+	display: inline-block;
+}
