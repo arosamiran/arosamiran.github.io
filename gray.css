@@ -37,6 +37,7 @@ nav ul{
 nav ul li{
 	list-style-type: none;
 	float: left;
+	height: 60px;
 	width: 20%;
 }
 
