@@ -1,10 +1,15 @@
 window.onload = init;
 
-var num = Math.floor(Math.random() * 3);
-var setLink = document.getElementById('change');
-	
 	function init() {
+		var footerHandler = document.getElementById('year');
+		var handler = new Date();
+		var theYear = handler.getFullYear();
 		
+		footerHandler.innerHTML = "All rights reserved <br> &copy; " + theYear;
+		selected();
+
+		var linkHandler = document.getElementById('change');
+		linkHandler.setAttribute("href", "green.css");
 /*		if (num === 0) {
 			setLink.setAttribute("href", "themes/dark.css");
 		}
@@ -15,10 +20,7 @@ var setLink = document.getElementById('change');
 			setLink.setAttribute("href", "themes/colorful.css");
 		}
 		setTimeout(hide, 1000);*/
-		var footerHandler = document.getElementById('year');
-		var handler = new Date();
-		var theYear = handler.getFullYear();
-		footerHandler.innerHTML = "All rights reserved <br> &copy; " + theYear;
+		
 
 	}	
 
@@ -32,4 +34,10 @@ var setLink = document.getElementById('change');
 		var target = document.getElementById('next');
 		target.setAttribute("class", "show");
 		setTimeout(hide, 1000);
+	}
+
+	function selected() {
+		var navLink = document.getElementById('clicked');
+
+		navLink.setAttribute("class", "selected");
 	}

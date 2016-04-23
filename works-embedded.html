@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta	charset="utf-8">
+	<meta name="author" content="Angelo Rosamiran">
+	<title>Works: Embedded Systems</title>
+	<link rel="icon" type="image/svg" href="doodlr.ico">
+	<link rel="stylesheet" type="text/css" href="green.css" id="change">
+	<script type="text/javascript" src="defaults.js"></script>
+	<link rel="stylesheet" type="text/css" href="works-embedded.css">
+</head>
+<body>
+
+<div id="holder">
+	<div id="header"></div>
+		<nav>
+		  <ul>
+		    <li><a href="index.html">Blog</a></li>
+		    <li id="clicked"><a>Works</a></li>
+		    <li><a href="http://arosamiran.github.io"><img src="doodlr.PNG" alt="Doodlr logo" id="logo" /></a></li>
+		    <li><a href="links.html">Links</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+		  </ul>
+		</nav>
+	
+		<section>
+			<div id="main-holder">
+				<article>
+					<h3>RFID-Controlled Doorlock</h3>
+					<p>During our junior year we were tasked to create (as project in one of our subjects) something that incorporates an Internet of Things (IoT) device. We came up with an RFID-controlled doorlock using arduino technology.</p>
+					<p>Arduino features a microcontroller capable of making decisions based on the user's input. And of course those desicions are based on the logic of the program. If you want to learn more about how to program an Arduino, you can visit this <a href="#">link</a>.</p>
+					<div class="materialsHolder">
+						<table>
+							<tr>
+								<td><img src="atmel.jpg" alt="The ATMEL328"class="materials"><figcaption>The ATMEL328</figcaption></td>
+							</tr>
+						</table>
+					</div>
+					<p>At the heart of every Arduino is an ATMEL 168/328 - an integrated circuit (IC) where you upload your program and it then controls (thus it is often reffered to as a microcontroller) how the Arduino reacts to its environment or the user's input. The model number represents the memory of the IC, 168 for 10KB and 328 for the 32KB version.</p>
+					<p>So, our project is composed of three main parts: the controller, the reader and a solenoid. The controller is the Arduino and the reader, an RFID  reader we've bought at <a href="#">E-Gizmo</a>.The reader is then composed of a coil - which is The Reader - and a card - the one to be read.</p>
+					<p>The solenoid is a doorlock that the Arduino controlls - to give access or make the door open-able or not.</p>
+					<h4>How does it work?</h4>
+					<p>The project works like this:</p>
+					<ul>
+						<li>A user taps his RFID card,</li>
+						<li>The reader...reads the card - it contains a serial number,</li>
+						<li>The serial is then passed to the Arduino and</li>
+						<li>The Arduino compares the serial number to the serial number coded to it then decides wether the solenoid lock should be open-abe or not.</li>
+					</ul>
+					<p>Sounds simple huh? But there's a twist to our project.</p>
+					<p>We are not allowed to use an Arduino. I mean, we have to make our own.</p>
+					<p>You can find the codes in this <a href="#">repository</a>.</p>
+
+					<div id="galleryHolder">
+						<table>
+							<caption>Gallery</caption>
+							<tr>
+								<td>Column 1, Row 1</td>
+								<td>Column 2, Row 1</td>
+							</tr>
+							<tr>
+								<td>Column 1, Row 2</td>
+								<td>Column 2, Row 2</td>
+							</tr>
+							<tr></tr>
+						</table>
+					</div>
+					
+
+					<!-- Next work -->
+					<h3>Digital Clock</h3>
+					<p>In our senior year we had a project to create a digital clock using only TTL (transistor-transistor logic) integrated circuits.</p>
+					<p>You know how digital clocks work. It's just that, after I've done one with this project I've realized that making one is difficult.</p>
+
+					<div id="backHolder">
+						<a href="works.html">Back</a>
+					</div>
+				</article>	
+			</div>
+		</section>
+	
+		<footer>
+			<p id="year"></p>
+		</footer>
+</div>
+
+</body>
+</html>

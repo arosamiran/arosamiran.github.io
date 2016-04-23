@@ -1,13 +1,7 @@
-window.onload = init;
-
 var list = document.getElementById('main-holder').getElementsByTagName('li');
 var listLength = list.length;
 
 function init() {
-	var footerHandler = document.getElementById('year');
-	var handler = new Date();
-	var theYear = handler.getFullYear();
-	footerHandler.innerHTML = "All rights reserved <br> &copy; " + theYear;
 }
 
 function changeWidth(hovered) {
@@ -18,7 +12,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: -130px; bottom: 430px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img1-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Lines</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: -130px; bottom: 430px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img1-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Lines</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}
@@ -26,7 +20,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: 70px; bottom: 430px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img2-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Sunset</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: 70px; bottom: 430px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img2-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Sunset</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}
@@ -34,7 +28,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: 300px; bottom: 430px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img3-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Merida</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: 300px; bottom: 430px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img3-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Merida</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}
@@ -42,7 +36,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: -130px; bottom: 300px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img4-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Christmas Lights</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: -130px; bottom: 300px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img4-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Christmas Lights</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}
@@ -50,7 +44,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: 70px; bottom: 300px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img5-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">The Philippine Flag</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: 70px; bottom: 300px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img5-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">The Philippine Flag</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}
@@ -58,7 +52,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: 300px; bottom: 300px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img6-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Fountain</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: 300px; bottom: 300px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img6-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Fountain</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}
@@ -66,7 +60,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: -130px; bottom: 150px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img7-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Balete Tree</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: -130px; bottom: 150px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img7-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Balete Tree</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}
@@ -74,7 +68,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: 70px; bottom: 150px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img8-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Fireworks</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: 70px; bottom: 150px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img8-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Fireworks</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}
@@ -82,7 +76,7 @@ function changeWidth(hovered) {
 		if (listLength > 9) {
 			left();
 		} else {
-			newItem.innerHTML = '<div style="position: absolute; left: 300px; bottom: 150px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px"><img src="img9-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Silhouette</figcaption></div>';
+			newItem.innerHTML = '<div style="position: absolute; left: 300px; bottom: 150px; width: 512px; height: 368px; background-color: #555; border-radius: 2px; padding: 10px;"><img src="img9-wide.jpg" style="width: 512px"><figcaption style="text-align: center; color: #aaa;">Silhouette</figcaption></div>';
 			ulHandler.appendChild(newItem);
 			newItem.setAttribute("id", "new");
 		}

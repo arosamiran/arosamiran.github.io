@@ -13,8 +13,8 @@
 	margin: 0px auto;
 }
 
-#imageHolder-shirts img{
-	opacity: 0.8;
+#imageHolder-shirts img, #beta{
+	box-shadow: 0px 0px 5px 1px #444;
 }
 
 #space{
@@ -31,8 +31,4 @@ figcaption{
 
 #imageHolder-animation table{
 	margin: 0px 0px 20px 20px;
-}
-
-#imageHolder-animation{
-	float: right;
 }

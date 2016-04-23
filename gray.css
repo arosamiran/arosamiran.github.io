@@ -6,6 +6,10 @@ body {
 	width: 1000px;
 }
 
+#holder{
+	box-shadow: 0px 0px 20px 1px #222;
+}
+
 #logo{
 	width: 220px;
 	position: absolute;
@@ -17,7 +21,6 @@ body {
 	width: 100%;
 	height: 150px;
 	background-color: #2B2B2B;
-	box-shadow: 0px 0px 50px 1px #333;
 }
 
 nav{
@@ -37,7 +40,6 @@ nav ul{
 nav ul li{
 	list-style-type: none;
 	float: left;
-	height: 60px;
 	width: 20%;
 }
 
@@ -59,7 +61,6 @@ nav ul li a:hover{
 section{
 	width: 100%;
     background-color: #4D4D4D;
-    box-shadow: 0px 0px 50px 1px #333;
 }
 
 #main-holder{
@@ -131,7 +132,6 @@ footer{
 	background-color: #2B2B2B;
 	display: inline-block;
 	text-align: center;
-	box-shadow: 0px 5px 10px 1px #333;
 }
 
 footer p{
@@ -162,4 +162,84 @@ footer p{
 
 #post a:visited{
 	color: #ddd;
+}
+
+.selected{
+	background-color: #4D4D4D;
+	transition: none;
+}
+
+#main-holder .input{
+	border: none;
+	border-bottom: 2px solid #ccc;
+	background-color: transparent;
+	font-family: "Courier New", monospace;
+	font-size: 1.15em;
+	color: #eee;
+}
+
+#main-holder textarea{
+	resize: none;
+	color: #eee;
+}
+
+#main-holder button{
+	font-family: "Courier New", monospace;
+	font-size: 1.15em;
+	background-color: transparent;
+	border: none;
+	color: #ccc;
+	padding: 10px 15px;
+	margin: 5px;
+	float: right;
+	transition: background-color, 0.3s;
+	-webkit-transition: background-color, 0.3s;
+	-moz-transition: background-color, 0.3s;
+	-o-transition: background-color, 0.3s;
+}
+
+#main-holder button:hover{
+	background-color:#1A1A1A;
+	color: #eee;
+}
+
+#main-holder label{
+	color: #eee;
+}
+
+#main-holder p{
+	color: #fff;
+}
+
+figcaption{
+	color: #fff;
+}
+
+#about img{
+	box-shadow: 0px 0px 10px 1px #222;
+}
+
+#main-holder blockquote{
+	color: #fff;
+}
+
+#vsa{
+	box-shadow: 0px 0px 10px 1px #444;
+}
+
+
+#backHolder{
+	display: flex;
+	align-self: bottom;
+	float: right;
+}
+
+.websites-imageHolder img{
+	box-shadow: 0px 0px 10px 1px #777;
+	width: 720px;
+	margin: 20px 0px;
+}
+
+.websites-imageHolder table{
+	margin: 0px auto;
 }
