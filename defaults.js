@@ -9,7 +9,7 @@ window.onload = init;
 		selected();
 
 		var linkHandler = document.getElementById('change');
-		linkHandler.setAttribute("href", "green.css");
+		linkHandler.setAttribute("href", "red.css");
 /*		if (num === 0) {
 			setLink.setAttribute("href", "themes/dark.css");
 		}
