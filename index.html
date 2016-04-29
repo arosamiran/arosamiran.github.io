@@ -63,6 +63,27 @@
 
 			ga('create', 'UA-76012410-1', 'auto');
 			ga('send', 'pageview');
+	window.onload = init;
+
+function init() {
+	var footerHandler = document.getElementById('year');
+	var handler = new Date();
+	var theYear = handler.getFullYear();
+	footerHandler.innerHTML = "&copy; " + theYear;
+	setTimeout(hide, 1000);
+}
+
+function hide() {
+	var handler = document.getElementById('next');
+	handler.setAttribute("class", "hide");
+	setTimeout(show, 500);
+}
+
+function show() {
+	var handler = document.getElementById('next');
+	handler.setAttribute("class", "show");
+	setTimeout(hide, 1000);
+}
 	</script>
 </head>
 <body>
