@@ -4,11 +4,58 @@
 		<meta name="msvalidate.01" content="EF2FBBA96CB78265E7CD38DEF468CD47" />
 		<meta charset="utf-8" />
 		<meta name="author" content="Angelo Rosamiran" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome to my site!</title>
-		<link rel="stylesheet" type="text/css" href="black-and-white.css">
-		<link rel="icon" type="image/svg" href="doodlr.ico" />
-		<script type="text/javascript" src="defaults.js">
+		<title>Hello world!</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Angelo Rosamiran">
+	<title>Hello</title>
+	<!--Favicon definition-->
+	<link rel="icon" type="image/svg" href="doodlr.ico">
+	<!-- End favicon definition -->
+	<style type="text/css">
+	body{
+		background-color: #ffa500;
+		color: #FFF8DC;
+		font-family: "Courier New", monospace;
+		font-size: 100%;
+		width: 100%;
+		margin: 0px;
+	}
+
+	#message-holder{
+		margin: 260px auto;
+		width: 400px;
+		height: 200px;
+		display: flex;
+	}
+
+	#message-holder table{
+		font-size: 3em;
+		border-collapse: collapse;
+		margin-top: 75px;
+	}
+
+	#next{
+		border-bottom: 2px solid #FFF8DC;
+		width: 20px;
+	}
+
+	footer p{
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		margin-right: 25px;
+	}
+
+	.show{
+		display: all;
+	}
+
+	.hide{
+		display: none;
+	}
+
+	</style>
+	<script type="text/javascript">
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -16,66 +63,19 @@
 
 			ga('create', 'UA-76012410-1', 'auto');
 			ga('send', 'pageview');
-
-		</script>
-		
+	</script>
 </head>
 <body>
-
-<div id="holder">
-	<div id="header"></div>
-		<nav id="nav">
-		  <ul>
-		    <li id="clicked"><a>Blog</a></li>
-		    <li><a href="works.html">Works</a></li>
-		    <li><a href="http://arosamiran.github.io"><img src="doodlr.PNG" alt="Doodlr logo" id="logo"></a></li>
-		    <li><a href="links.html">Links</a></li>
-		    <li><a href="contact.html">Contact</a></li>
-		  </ul>
-		</nav>
-	
-		<section> 
-				<div id="main-holder">
-					<div id="about">
-						<h3>A little something about me...</h3>
-							<div>
-								<table style="margin: 0px auto;">
-									<tr>
-										<td><img src="me.jpg" alt="Portrait of me in front of a wall" style="width: 512px;"><figcaption style="text-align: center;">Portrait of me</figcaption></td>
-									</tr>
-								</table>
-							</div>
-						<p>Hello! I am Angelo Rosamiran, a Computer Engineering student. Aside from what I am learning in school, I am also passionate about programming - especially on the web development and designing front.</p>
-						<p>In my free-time I read e-books about web-development and go through the exercises by creating websites (like this to test my understanding)</p>
-					</div>
-
-						<h3 style="text-decoration: none; display: inline;">Blog posts</h3>
-						<hr style="margin-top: 5px;">
-						
-						<div id="postHolder">
-							<div class="background"></div>
-							<div id="post">
-								<h3 style="text-decoration: none;">Designs and Animations, and Websites | <span id="date">04-18-2016</span></h3>
-								<p>Here I've explained some of my designs and of course a little bit of a background on that little circle above.</p>
-								<p class="more"><a href="works-designs.html">Read more</a></p>
-							</div id="post">
-						</div>
-						
-						<div id="postHolder">
-							<div class="background"></div>
-							<div id="post">
-								<h3 style="text-decoration: none;">Photographs | <span id="date">04-17-2016</span></h3>
-								<p>I would like to announce that the link to the Photographs section is now live! Yay!</p>
-								<p id="more-unique"><a href="post-20160417.html">Read more</a></p>
-							</div id="post">
-						</div>
-				</div>
-		</section>
-	
-		<footer>
-			<p id="year"></p>
-		</footer>
+<div id="message-holder">
+	<table>
+		<tr>
+			<td id="message">Hello world!</td>
+			<td id="next"></td>
+		</tr>
+	</table>
 </div>
-
+<footer>
+	<p id="year"></p>
+</footer>
 </body>
 </html>
