@@ -7,9 +7,6 @@ window.onload = init;
 		
 		footerHandler.innerHTML = "All rights reserved <br> &copy; " + theYear;
 		selected();
-
-		var linkHandler = document.getElementById('change');
-		linkHandler.setAttribute("href", "red.css");
 /*		if (num === 0) {
 			setLink.setAttribute("href", "themes/dark.css");
 		}
