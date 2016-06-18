@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="msvalidate.01" content="EF2FBBA96CB78265E7CD38DEF468CD47">
+	<meta charset="utf-8">
+	<meta name="author" content="Angelo Rosamiran">
+	<title>Works by Angelo Rosamiran</title>
+	<link rel="stylesheet" type="text/css" href="coffee.css">
+	<link rel="icon" type="image/svg" href="doodlr.ico">
+	<style type="text/css">
+		.works{
+			color: #301f09;
+			background-color: #f7c282;
+			transition: box-shadow, 0.3s;
+			cursor: pointer;
+		}
+
+		.works:hover{
+			box-shadow: 0px 0px 15px #301f09;
+			border-radius: 2px;
+		}
+
+		table a{
+			display: block;
+			padding: 10px 30px;
+			color: #301f09;
+		}
+
+		table a:visited{
+			color: #301f09;
+		}
+
+		#worksHolder{
+			border-spacing: 15px;
+			width: 750px;
+			margin: 0px auto;
+		}
+
+	</style>
+	<script type="text/javascript" src="defaults.js">
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-76012410-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+
+<header></header>
+
+<div id="holder">
+	<nav>
+		<ul>
+			<li><a href="index.html">Blog</a></li>
+			<li><a class="selected">Works</a></li>
+			<li><a href="index.html"><img src="doodlr.PNG" alt="Doodlr logo" id="logo" /></a></li>
+			<li><a href="links.html">Links</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="container">
+			<table id="worksHolder">
+				<tr>
+					<td class="works">
+						<a href="works-designs.html">
+							<h3>Designs and Animations</h3>
+							<p>Making designs and animations in my free-time. Especially when ideas came pouring in.</p>
+						</a>						
+					</td>
+				</tr>
+				<tr>
+					<td class="works">
+						<a href="works-websites.html">
+							<h3>Websites</h3>
+							<p>I just love making websites. Here, I showcase some of them. #coding</p>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td  class="works"s>
+						<a href="works-embedded-systems.html">
+							<h3>Embedded Systems</h3>
+							<p>Makes I have co-authored with my classmates for projects.</p>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="works">
+						<a href="works-photographs.html">
+							<h3>Photographs</h3>
+							<p>Photography used to be one of my hobbies. Here are some of my best shots.</p>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="works" onclick="unavailableMessage()">
+						<a href="#">
+							<h3>Software</h3>
+							<p>Desktop application I have made in one of my subjects.</p>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</main>
+	
+	<footer>
+		<div>
+			<p id="year"></p>
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>
