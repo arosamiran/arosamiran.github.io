@@ -82,6 +82,15 @@ main #container{
 	margin: 0px;
 }
 
+#container a{
+	text-decoration: none;
+	color: #301f09;
+}
+
+#container a:visited{
+	color: #301f09;
+}
+
 footer{
 	height: 45px;
 	width: 100%;
