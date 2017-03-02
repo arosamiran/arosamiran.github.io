@@ -1,0 +1,132 @@
+#photosPane ul{
+	column-count: 2;
+	column-fill: balance;
+	column-gap: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+#photosPane li{
+	margin-bottom: 5px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.thumbnail{
+	cursor: pointer;
+	transition: 0.3s;
+	border: 1px #000 solid;
+}
+
+.thumbnail:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding: 25% auto; /* Location of the box */
+	left: 0;
+	top: 0;
+	margin: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+	margin: auto;
+	position: relative;
+}
+
+.modalNav{
+	width: 100%;
+	/*border: #fff 1px dotted;*/
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+	margin: auto;
+	text-align: center;
+	color: #ccc;
+	padding: 10px auto;
+}
+
+.left{
+	left: 0px;
+
+	/*margin-bottom: 10px;*/
+}
+
+.right{
+	right: 0px;
+}
+
+.btn{
+	/*display: inline-block;*/
+	color: #000;
+	font-weight: lighter;
+	font-size: 2em;
+	padding: 25% 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	position: absolute;
+}
+
+#count{
+	display: inline-block;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)}
+	to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	.modal-content {
+		width: 100%;
+	}
+}
+
+.hide{
+	display: none;
+	transition: all, 0.3s;
+}
+
+.appear{
+	display: block;
+	transition: all, 0.3s;
+}

@@ -1,0 +1,82 @@
+body{
+	background-color: #4040a1;
+	background-image: url("../images/coffee-beans-i.png");
+	background-position: left top;
+	background-repeat: repeat-x;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+article{
+	padding: 20px;
+}
+
+blockquote{
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: lighter;
+	color: #bcc8cc;
+}
+
+.text{
+	font-family: "Segoe UI", sans-serif;
+	font-size: 1.25em;
+	font-weight: lighter;
+	text-decoration: none;
+	color: #bcc8cc;
+}
+
+.title{
+	color: #fefbd8;
+	font-size: 1.75em;
+	text-decoration: none;
+	font-weight: lighter;
+	text-align: center;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.header{
+	color: #fefbd8;
+	font-size: 1.5em;
+	text-decoration: none;
+	font-weight: lighter;
+}
+
+.caption{
+	font-family: "Century Gothic", sans-serif;
+	color: #bcc8cc;
+	text-align: center;
+	margin: 10px;
+}
+
+img{
+	width: 100%;
+}
+
+.link{
+	text-decoration: none;
+	color: #bcc8cc;
+	border-bottom: 1px #bcc8cc dotted;
+}
+
+/*.link:hover{
+	opacity: 0.8;
+}*/
+
+.thumbnail{
+	width: 100%;
+}
+
+.thumb-holder{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	padding: 0 5px;
+	/*border: 1px #fff dotted;*/
+}

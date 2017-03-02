@@ -1,0 +1,41 @@
+p{
+	font-size: 1.25em;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+body{
+	background-color: #d9ad7c;
+	padding: 20px;
+	font-family: "Segoe UI", sans-serif;
+	color: #674d3c;
+}
+
+hr{
+	color: #674d3c;
+}
+
+.header{
+	text-align: center;
+	font-size: 2em;
+	font-weight: lighter;
+}
+
+.title{
+	padding: 20px;
+	font-size: 1.5em;
+	font-weight: lighter;
+	display: block;
+	background-color: #674d3c;
+	color: #d9ad7c;
+}
+.dateHolder{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.date{
+    font-family: monospace;
+    font-weight: lighter;  
+    font-size: 1.2em;  
+}
