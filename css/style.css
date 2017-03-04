@@ -181,6 +181,7 @@ a{
 	background-color: #fff;
 	background-image: url("../images/coffee-beans.png");
 	background-repeat: repeat-x;	
+	background-color: #f7c282;
 	background-position: left bottom;
 }
 
@@ -486,7 +487,6 @@ a{
 		background-image: url("../images/coffee-beans-d.png");
 		background-position: left bottom;
 		background-repeat: repeat-x;
-		background-color: #f7c282;
 		z-index: 99;
 	}
 
