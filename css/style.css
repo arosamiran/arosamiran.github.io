@@ -178,7 +178,7 @@ a{
 }
 
 #intro{
-	background-color: #fff;
+	/*background-color: #fff;*/
 	background-image: url("../images/coffee-beans.png");
 	background-repeat: repeat-x;	
 	background-color: #f7c282;
