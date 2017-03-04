@@ -406,6 +406,13 @@ a{
 }
 
 @media screen and (min-width: 720px){
+	#wc{
+		background: -webkit-gradient(linear, left top, left bottom, from(#4040a1), to(#fff));
+		background: -webkit-linear-gradient(top, #4040a1, #fff);
+		background: -moz-linear-gradient(top, #4040a1, #fff);
+		background: linear-gradient(to bottom, #4040a1, #fff);
+	}
+
 	.text{
 		font-size: 1.35em;
 	}
