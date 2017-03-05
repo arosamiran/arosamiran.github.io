@@ -287,17 +287,23 @@ a{
 
 .contact [type="text"]{
 	padding: 10px;
+	background-color: transparent;
+	color: #fff;
 }
 
 .contact .twitter-share-button{
 	text-align: center;
 	margin: 0px 20px;
-	background-color: #55ACEE;
+	background-color: transparent;
 	border: none;
+	border: 1px solid #55ACEE;
 	color: #fff;
-	padding: 10px;
+	padding: 20px;
 	border-radius: 5px;
-	float: right;
+}
+
+.contact .twitter-share-button:hover{
+	background-color: #55ACEE;
 }
 
 /*#cl{
