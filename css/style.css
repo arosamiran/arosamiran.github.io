@@ -273,7 +273,7 @@ a{
 	align-items: stretch;*/
 }
 
-.contact .label-holder{
+.contact .tweet{
 	text-align: center;
 }
 
@@ -285,22 +285,8 @@ a{
 	display: inline-block;
 }
 
-.contact [type="text"]{
-	padding: 10px;
-	background-color: transparent;
-	color: #fff;
-	border: 1px #000 solid;
-}
-
 .contact .twitter-share-button{
-	text-align: center;
-	margin: 0px 20px;
-	background-color: transparent;
-	border: none;
-	border: 1px solid #55ACEE;
 	color: #fff;
-	padding: 20px;
-	border-radius: 5px;
 }
 
 .contact .twitter-share-button:hover{
