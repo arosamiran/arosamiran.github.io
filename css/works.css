@@ -14,6 +14,7 @@ body{
 
 article{
 	padding: 20px;
+	background-color: rgba(185, 188, 189, 0.3);	
 }
 
 blockquote{
@@ -28,7 +29,7 @@ blockquote{
 	font-size: 1.25em;
 	font-weight: lighter;
 	text-decoration: none;
-	color: #bcc8cc;
+	color: #fff;
 }
 
 .title{
@@ -61,8 +62,14 @@ img{
 
 .link{
 	text-decoration: none;
-	color: #bcc8cc;
-	border-bottom: 1px #bcc8cc dotted;
+	opacity: 0.8;
+	transform: opacity, 0.2s;
+	color: #fff;
+	border-bottom: 1px #fff dotted;
+}
+
+.link:hover{
+	opacity: 1;	
 }
 
 /*.link:hover{
@@ -75,21 +82,53 @@ img{
 
 .thumb-holder{
 	width: 100%;
-	float: left;
 	display: inline-block;
 	padding: 0 5px;
 	/*border: 1px #fff dotted;*/
 }
 
 .back-btn{
+	display: inline-block;
+	cursor: pointer;
 	padding: 20px;
 	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgb(255, 255, 255);
 	color: #000;
-	opacity: 1;
+	opacity: 0.3;
+	font-weight: bolder;
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
 	font-size: 1.5em;
 
+}
+
+@media screen and (min-width: 720px){
+	.thumbnail{
+		width: 100%;
+	}
+
+	.thumb-holder-l{
+		width: 30%;
+		float: left;		
+		padding-right: 20px;
+	}
+
+	.thumb-holder-r{
+		width: 30%;
+		float: right;
+		padding-left: 20px;
+	}
+
+	.thumb-holder-c{
+		margin: 0px auto;
+		width: 30%;
+	}
+
+	.back-btn{
+		top: 20px;
+		left: 20px;
+		bottom: initial;
+		right: initial;
+	}
 }

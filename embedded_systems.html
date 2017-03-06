@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/works.css">
 	<title>Works: Embedded Systems</title>
 	<script>
+	// analytics code
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,6 +16,12 @@
 
 		ga('create', 'UA-76012410-1', 'auto');
 		ga('send', 'pageview');	
+
+		function back(){
+			var backHolder = document.getElementById("back");
+			backHolder.onclick = history.back();
+		}
+
 	</script>
 </head>
 <body>
@@ -32,7 +39,7 @@
 				Arduino features a microcontroller capable of making decisions based on the user's input. And of course those desicions are based on the logic of the program. If you want to learn more about how to program an Arduino, you can visit this <a class="link" href="#">link</a>.
 			</p>
 
-			<div>
+			<div class="">
 				<img src="atmel.jpg" alt="The ATMEL328">
 				<figcaption class="caption">The ATMEL328</figcaption>
 			</div>
@@ -42,7 +49,7 @@
 			</p>
 
 			<p class="text">
-				So, our project is composed of three main parts: the controller, the reader and a solenoid. The controller is the Arduino and the reader, an RFID  reader we've bought at <a href="#">E-Gizmo</a>.The reader is then composed of a coil - which is The Reader - and a card - the one to be read.
+				So, our project is composed of three main parts: the controller, the reader and a solenoid. The controller is the Arduino and the reader, an RFID  reader we bought at <a href="#" class="link">E-Gizmo</a>.The reader is then composed of a coil - which is The Reader - and a card - the one to be read.
 			</p>
 
 			<p class="text">

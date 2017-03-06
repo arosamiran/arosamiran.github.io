@@ -8,38 +8,47 @@
 	<link rel="stylesheet" type="text/css" href="css/works.css">
 	<title>Works: Designs and Animations</title>
 	<script>
+	// analytics code
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-76012410-1', 'auto');
-		ga('send', 'pageview');	
+		ga('send', 'pageview');
+
+		function back(){
+			var backHolder = document.getElementById("back");
+			backHolder.onclick = history.back();
+		}
 	</script>
 </head>
 <body>
 	<article>
+		<div class="bg"></div>
 		<div class="title">Designs and Animations</div>
 		<div>
 			<h3 class="header">Designs</h3>
 			<div class="holder">
-				<div>
-					<img src="images/the-black-mamba.jpg" alt="The Black Mamba" class="shirts">
+				<div class="thumb-holder-l">
+					<img src="images/the-black-mamba.jpg" alt="The Black Mamba" class="thumbnail">
 					<figcaption class="caption">The Black Mamba</figcaption>
 
 				</div>
-				<div>
-					<img src="images/pizza-is-life.jpg" alt="Pizza is Life" class="shirts">
+				<div class="thumb-holder-l">
+					<img src="images/pizza-is-life.jpg" alt="Pizza is Life" class="thumbnail">
 					<figcaption class="caption">Pizza is Life</figcaption>				
 				</div>
 			</div>
 
 			<p class="text">
 				I submitted these designs as entries in a contest for the Programmers, Developers group in Facebook some time in March. Unfortunately I didn't win but that's okay. I entered for the experience like when I volunteered for the Maker Festival Manila in 2014 hosted by Mozilla.
+				<br>
 			</p>
 
-			<div>
-				<img src="images/logo-beta.jpg" alt="Drawing of the logo">
+
+			<div class="thumb-holder-c">				
+				<img class="thumbnail" src="images/logo-beta.jpg" alt="Drawing of the logo">
 				<figcaption class="caption">Doodlr at its conception</figcaption>
 			</div>
 
@@ -51,12 +60,12 @@
 				And below are the final versions of the logo. The first one, I use it for beta versions of things I'm working on. The second one, for final or release versions. I got inspiration from Caspar Lee's logo. He's a video blogger (vlogger) based in London but he's really from South Africa. You can follow his channel <a href="#" class="link">here</a>.
 			</p>
 
-			<div class="thumb-holder">
+			<div class="thumb-holder-r">
 				<img class="thumbnail" src="images/doodlr-labs.png" alt="Doodlr Lab">
 				<figcaption class="caption">Doodlr Lab</figcaption>
 			</div>
 
-			<div class="thumb-holder">
+			<div class="thumb-holder-r">
 				<img class="thumbnail" src="images/doodlr.png" alt="Doodlr">
 				<figcaption class="caption">Doodlr</figcaption>
 			</div>
@@ -75,7 +84,7 @@
 			<h4 class="text">The VSA logo</h4>
 
 			<p class="text">This thing is really new to me. Here are some of my works anyways.</p>
-			<div>
+			<div class="thumb-holder-r">
 				<img src="images/vsa-logo.gif" alt="VSA logo animation">
 				<figcaption class="caption">VSA logo animation</figcaption>
 			</div>
@@ -98,7 +107,7 @@
 
 			<h4 class="text">Battery animation</h4>
 
-			<div>
+			<div class="thumb-holder-c">
 				<img src="images/battery-animation.gif" alt="Battery animation">
 				<figcaption class="caption">Battery animation</figcaption>
 			</div>
@@ -106,13 +115,15 @@
 			<p class="text">This is the first animation I made after I attended a seminar about Photoshop last September 2015.</p>
 
 		</div>
-		<div class="back-btn">
+		<div>
 			<table>
 				<tr>
-					<td>&lt;</td>
+					<td id="back" onclick="back()" class="back-btn">&lt;</td>
 				</tr>
 			</table>
 		</div>
+		<script>
+		</script>
 	</article>
 	</body>
 </html>

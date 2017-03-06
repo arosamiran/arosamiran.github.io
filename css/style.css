@@ -289,6 +289,7 @@ a{
 	padding: 10px;
 	background-color: transparent;
 	color: #fff;
+	border: 1px #000 solid;
 }
 
 .contact .twitter-share-button{
