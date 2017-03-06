@@ -274,6 +274,7 @@ a{
 }
 
 .contact .tweet{
+	color: #fff;
 	text-align: center;
 }
 
@@ -287,10 +288,13 @@ a{
 
 .contact .twitter-share-button{
 	color: #fff;
+	opacity: 0.8;
+	transform: all, 0.2s;
 }
 
 .contact .twitter-share-button:hover{
-	background-color: #55ACEE;
+	color: #55ACEE;
+	opacity: 1;
 }
 
 /*#cl{
