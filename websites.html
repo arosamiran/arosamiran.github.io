@@ -7,6 +7,7 @@
 	<link rel="icon" type="image/svg" href="images/doodlr.ico">
 	<link rel="stylesheet" type="text/css" href="css/works.css">
 	<script>
+	// analytics code
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -14,6 +15,11 @@
 
 		ga('create', 'UA-76012410-1', 'auto');
 		ga('send', 'pageview');	
+
+		function back(){
+			var backHolder = document.getElementById("back");
+			backHolder.onclick = history.back();
+		}
 	</script>
 	<title>Works: Websites</title>
 </head>
@@ -41,8 +47,10 @@
 
 				<h4 class="header">Static sites</h4>
 
-				<div>
-					<img src="images/maker-party.jpg" alt="Sample site I've created during the Maker Party for Teachers by Mozilla Philippines">
+				<div class="thumb-holder-c">
+					<a href="images/maker-party.jpg">
+						<img src="images/maker-party.jpg" alt="Sample site I've created during the Maker Party for Teachers by Mozilla Philippines">
+					</a>
 					<figcaption class="caption">Maker Party Webpage</figcaption>
 				</div>
 
@@ -50,8 +58,10 @@
 					This is a sample site I've created during the Maker Party for Teachers by <a class="link" href="#">Mozilla Philippines</a>. It was held last September 6, 2014 at GlobeLabs in Makati. This is an incomplete site. I myself isn't quite contented with what I've accomplished but given the time given to us (30 minutes, I guess) and the frustrations CSS has given to me (we all know how CSS can be), I guess I've done a satisfactory job.
 				</p>
 				
-				<div>
-					<img src="images/tesda.PNG" alt="The site I've created when I've attended a class sponsored by TESDA">
+				<div class="thumb-holder-c">
+					<a href="images/tesda.PNG">
+						<img src="images/tesda.PNG" alt="The site I've created when I've attended a class sponsored by TESDA">
+					</a>
 				</div>
 
 				<p class="text">
@@ -64,8 +74,10 @@
 
 				<h4 class="header">Dynamic sites</h4>
 
-				<div>
-					<img src="images/battleship.PNG" alt="Recreating a classic arcade game - Battleship">
+				<div class="thumb-holder-c">
+					<a href="images/battleship.PNG">
+						<img src="images/battleship.PNG" alt="Recreating a classic arcade game - Battleship">
+					</a>
 				</div>
 
 				<p class="text">
@@ -75,19 +87,30 @@
 				<p class="text">Watch out as I'll be adding a leaderboard to it using PHP soon!</p>
 				<br>
 
-				<div>
-					<img src="images/school.PNG" alt="University website">
+				<div class="thumb-holder-c">
+					<a href="images/school.PNG">
+						<img src="images/school.PNG" alt="Supposed college website">
+					</a>
 				</div>
 
 				<p class="text">
-					Last year (2015), before I left school, I was working on this site as part of our project in System Analysis and Design (SAD). I usually refer to it as "The site that never was".
+					Last 2015, before I left school for the first time, I was working on this site as part of our project in System Analysis and Design (SAD). I usually refer to it as "The site that never was".
 				</p>
 
 				<p class="text">
 					The main purpose of the site (as a supposed official site of the school) is to accept applications from interested students applying for an entrance exam.
 				</p>
 
-				<?php require 'shared/back_btn.php'; ?>
+				<p class="text">
+					It was the first time I left school and tried again the following year. I guess I wasn't fully recovered so I left again.
+				</p>
+		</div>
+		<div>
+			<table>
+				<tr>
+					<td id="back" onclick="back()" class="back-btn">&lt;</td>
+				</tr>
+			</table>
 		</div>
 	</article>
 </body>

@@ -1,8 +1,8 @@
 body{
-	background: -webkit-gradient(linear, left top, left bottom, from(#4040a1), to(#2980b9));
-	background: -webkit-linear-gradient(top, #4040a1, #2980b9);
-	background: -moz-linear-gradient(top, #4040a1, #2980b9);
-	background: linear-gradient(to bottom right, #4040a1, #2980b9);
+	background: -webkit-gradient(linear, left top, left bottom, from(#E8E1C4), to(#C3DAD1));
+	background: -webkit-linear-gradient(top, #E8E1C4, #C3DAD1);
+	background: -moz-linear-gradient(top, #E8E1C4, #C3DAD1);
+	background: linear-gradient(to bottom right, #E8E1C4, #C3DAD1);
 	font-family: "Segoe UI", sans-serif;
 	font-size: 100%;
 	box-sizing: border-box;
@@ -20,7 +20,7 @@ blockquote{
 	font-size: 1.3em;
 	text-align: center;
 	font-weight: lighter;
-	color: #bcc8cc;
+	color: #2c3e50;
 }
 
 .text{
@@ -28,11 +28,11 @@ blockquote{
 	font-size: 1.25em;
 	font-weight: lighter;
 	text-decoration: none;
-	color: #fff;
+	color: #34495e;
 }
 
 .title{
-	color: #fefbd8;
+	color: #2c3e50;
 	font-size: 1.75em;
 	text-decoration: none;
 	font-weight: lighter;
@@ -42,7 +42,7 @@ blockquote{
 }
 
 .header{
-	color: #fefbd8;
+	color: #2c3e50;
 	font-size: 1.5em;
 	text-decoration: none;
 	font-weight: lighter;
@@ -50,7 +50,7 @@ blockquote{
 
 .caption{
 	font-family: "Century Gothic", sans-serif;
-	color: #bcc8cc;
+	color: #2c3e50;
 	text-align: center;
 	margin: 10px;
 }
@@ -63,8 +63,8 @@ img{
 	text-decoration: none;
 	opacity: 0.8;
 	transform: opacity, 0.2s;
-	color: #fff;
-	border-bottom: 1px #fff dotted;
+	color: #34495e;
+	border-bottom: 1px #34495e dotted;
 }
 
 .link:hover{
@@ -102,6 +102,7 @@ img{
 
 }
 
+
 @media screen and (min-width: 720px){
 	.thumbnail{
 		width: 100%;
@@ -129,5 +130,10 @@ img{
 		left: 20px;
 		bottom: initial;
 		right: initial;
+	}
+
+	.center{
+		text-align: center;
+		margin: 0px auto;
 	}
 }

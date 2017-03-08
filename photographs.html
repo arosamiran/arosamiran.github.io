@@ -7,8 +7,8 @@
 	<link rel="icon" type="image/svg" href="images/doodlr.ico">
 	<link rel="stylesheet" type="text/css" href="css/works.css">
 	<link rel="stylesheet" type="text/css" href="css/photos.css">
-	<!--/*<script src="scripts/photos_old.js"></script>*/-->
 	<script>
+	// analytics code
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -16,6 +16,11 @@
 
 		ga('create', 'UA-76012410-1', 'auto');
 		ga('send', 'pageview');	
+
+		function back(){
+			var backHolder = document.getElementById("back");
+			backHolder.onclick = history.back();
+		}
 	</script>
 	<title>Works: Photographs</title>
 </head>
@@ -39,36 +44,44 @@
 			</p>
 			
 			<p class="text">
-				You can also visit my "Mobile Photography" album on <a class="link" href="https://www.facebook.com/sage94.rosamiran" target="_blank">Facebook</a> or visit my <a class="link" href="http://www.instagram.com/arosamiran" target="_blank">Instagram</a> account to see more photos.
+				You can also visit my "Mobile Photography" album on <a class="link" href="https://www.facebook.com/a.rosamiran" target="_blank">Facebook</a> or visit my <a class="link" href="http://www.instagram.com/arosamiran" target="_blank">Instagram</a> account to see more photos.
 			</p>
 
 			<div id="photosPane">
 				<ul>
 					<li class="thumb-holder"><a href="images/img1-wide.jpg" target="_blank"><img src="images/img1-wide.jpg" alt="Lines" class="thumbnail"></a></li>
-					<li class="thumb-holder"><a href="images/img2-wide.jpg" target="_blank"><img src="images/img2-wide.jpg" alt="Sunset" class="thumbnail"></li>
-					<li class="thumb-holder"><a href="images/img3-wide.jpg" target="_blank"><img src="images/img3-wide.jpg" alt="Merida" class="thumbnail"></li>
-					<li class="thumb-holder"><a href="images/img4-wide.jpg" target="_blank"><img src="images/img4-wide.jpg" alt="Christmas Lights" class="thumbnail"></li>
-					<li class="thumb-holder"><a href="images/img5-wide.jpg" target="_blank"><img src="images/img5-wide.jpg" alt="The Philippine Flag" class="thumbnail"></li>
-					<li class="thumb-holder"><a href="images/img6-wide.jpg" target="_blank"><img src="images/img6-wide.jpg" alt="Fountains" class="thumbnail"></li>
-					<li class="thumb-holder"><a href="images/img7-wide.jpg" target="_blank"><img src="images/img7-wide.jpg" alt="Fireworks" class="thumbnail"></li>
-					<li class="thumb-holder"><a href="images/img8-wide.jpg" target="_blank"><img src="images/img8-wide.jpg" alt="Silhouette" class="thumbnail"></li>
+					<li class="thumb-holder"><a href="images/img2-wide.jpg" target="_blank"><img src="images/img2-wide.jpg" alt="Sunset" class="thumbnail"></a></li>
+					<li class="thumb-holder"><a href="images/img3-wide.jpg" target="_blank"><img src="images/img3-wide.jpg" alt="Merida" class="thumbnail"></a></li>
+					<li class="thumb-holder"><a href="images/img4-wide.jpg" target="_blank"><img src="images/img4-wide.jpg" alt="Christmas Lights" class="thumbnail"></a></li>
+					<li class="thumb-holder"><a href="images/img5-wide.jpg" target="_blank"><img src="images/img5-wide.jpg" alt="The Philippine Flag" class="thumbnail"></a></li>
+					<li class="thumb-holder"><a href="images/img6-wide.jpg" target="_blank"><img src="images/img6-wide.jpg" alt="Fountains" class="thumbnail"></a></li>
+					<li class="thumb-holder"><a href="images/img7-wide.jpg" target="_blank"><img src="images/img7-wide.jpg" alt="Fireworks" class="thumbnail"></a></li>
+					<li class="thumb-holder"><a href="images/img8-wide.jpg" target="_blank"><img src="images/img8-wide.jpg" alt="Silhouette" class="thumbnail"></a></li>
 				</ul>
 			</div>
-		
 
+			<p class="text" style="text-align: right;">
+				You can contact me for the full resolution versions.
+			</p>
+
+			<div>
+				<table>
+					<tr>
+						<td id="back" onclick="back()" class="back-btn">&lt;</td>
+					</tr>
+				</table>
+			</div>		
+		</div>
 	<!-- The Modal -->
-	<div id="myModal" class="modal" onclick="modalBtn()">
+	<!--<div id="myModal" class="modal" onclick="modalBtn()">
 
-		<!-- The Close Button -->
 		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
-		<!-- Modal Content (The Image) -->
 		<img class="modal-content" id="modalImg">
 
 
 		<span class="left btn" id="btn">&lt;</span>
 		<div class="modalNav">
-				<!-- Modal Caption (Image Text) -->
 				<div class="caption"></div>
 				<div class="caption">
 					<span id="count"></span>
@@ -76,10 +89,7 @@
 				</div>
 		</div>
 		<span class="right btn" id="btn">&gt;</span>		
-	</div>
-
-			<?php require 'shared/back_btn.php'; ?>
-		</div>
+	</div>-->
 	</article>
 </body>
 </html>
