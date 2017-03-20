@@ -4,6 +4,12 @@ var position = [], counter = 0;
 
 
 function init() {
+	// footer
+	var versionMonth = document.getElementById("month");
+	versionMonth.innerHTML = new Date().getMonth();
+	var versionYear = document.getElementById("year");
+	versionYear.innerHTML = new Date().getFullYear();
+
 	menuHandler = document.getElementById('menu');
 	menuHandler.style.position = "fixed";
 	menuHandler.style.top = "5px";
@@ -35,6 +41,7 @@ function init() {
 	var screenWidth = screen.width;
 
 	var dividerHandler = [document.getElementById('iw'), document.getElementById('wc'), document.getElementById('cl')];
+	
 
 	if (screenWidth <= 1280) {
 		// screenHeight = screenWidth;
@@ -47,8 +54,6 @@ function init() {
 			dividerHandler[i].style.display = "none";
 		}
 	}
-
-	// invoke function with parameters
 }
 
 function desktop(w, sh) {
@@ -174,16 +179,3 @@ function closeNav(num) {
 	// console.log(position[i].valueOf());
 	// scroll(i, num);
 }
-
-// function scroll(i, num) {
-// 	mainHandler.style.transition = "all, 1s";
-
-// 	for ( ; i < position.length; i++) {
-// 		if (position[i].valueOf()) {
-// 			var lq = position[i].slice(0);
-// 			mainHandler.style.transition = "translateY(" + lq + ")";
-// 			// mainHandler.style.top = position[i].valueOf();
-// 		}
-// 	}
-// }
-
