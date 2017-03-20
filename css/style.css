@@ -379,7 +379,6 @@ a{
 
 .footer p{
 	display: inline-block;
-	border: 1px dotted #fff;
 }
 
 @media screen and (orientation: landscape){
