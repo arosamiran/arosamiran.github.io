@@ -23,6 +23,13 @@ blockquote{
 	color: #fff;
 }
 
+.date{
+	font-weight: bold;
+	padding: 10px;
+	background-color: #000;
+	color: white !important
+}
+
 .text{
 	font-family: "Segoe UI", sans-serif;
 	font-size: 1.25em;
