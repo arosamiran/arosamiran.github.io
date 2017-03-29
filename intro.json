@@ -1,0 +1,33 @@
+var space = "&nbsp;";
+var tab = function () {
+    return space * 4;
+}
+
+var message = [
+    {
+        "date": "all",
+        "content": tab + "Hello! I am Angelo Rosamiran, a Computer Engineering student. Aside from what I am learning in school, I am also passionate about programming - especially on the web development and designing front."
+    },
+
+    {
+        "date": 2016,
+        "content": "&nbsp;&nbsp;&nbsp;&nbsp;In my free-time I read e-books about web-development and go through the exercises by creating websites (like this) to test my understanding. I also do designs (lanyards and shirts)."
+    },
+
+    {
+        "date": 2017,
+        "content": "&nbsp;&nbsp;&nbsp;&nbsp;This 2017, I left school (again) but my passion in programming didn't wane. Not one bit. Instead, it improved"
+    }
+]
+
+function print(arr){
+    var out = "";
+    var i;
+    for(i = 0; arr.length; i++){
+        out += '<span class="date"> + arr[i].date + '</span><p class="text">' +
+        arr[i].content + '</p><br>';
+    }
+    document.getElementById("about").innerHTML = out;
+}
+
+print(message);

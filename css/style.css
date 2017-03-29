@@ -162,14 +162,15 @@ a{
 }
 
 .s-doodlr{
-	/*border: 1px #000 solid;*/
+	border: 1px #000 solid;
 	text-align: center;
 	margin: auto;
-	/*border-radius: 250px;*/
+	width: 60%;
+	border-radius: 250px;
 }
 
-.doodlr-m{
-	display: none;
+.s-doodlr img{
+	width: 100%;
 }
 
 .date{
