@@ -1,5 +1,8 @@
-<xml version="1.0" encoding="utf-8">
-    <intro class="text">
-        <p>Hello! I am Angelo Rosamiran, a Computer Engineering student.</p>
-        <p>Aside from what I am learning in school, I am also passionate about programming - especially on the web development and designing front.</p>
-</xml>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="xstyle.xsl"?>
+    <intro>
+        <text>Hello! I am Angelo Rosamiran, a Computer Engineering student.</text>
+        <text>Aside from what I am learning in school, I am also passionate about programming - especially on the web development and designing front.</text>
+        <text>In my free-time I read e-books about web-development and go through the exercises by creating websites (like this) to test my understanding. I also do designs (lanyards and shirts).</text>
+    </intro>
+    
