@@ -157,16 +157,16 @@ a{
 .doodlr-s{
 	width: 50%;
 	/*border: 1px #aaa dotted;*/
-	border-radius: 250px;
+	border-radius: 100%;
 	margin-top: 20px
 }
 
 .s-doodlr{
-	border: 1px #000 solid;
+	/*border: 1px #000 solid;*/
 	text-align: center;
 	margin: auto;
-	width: 60%;
-	border-radius: 250px;
+	width: 20%;
+	/*border-radius: 250px;*/
 }
 
 .s-doodlr img{
@@ -182,6 +182,7 @@ a{
 
 #intro{
 	/*background-color: #fff;*/
+	padding: 20px;
 	background-image: url("../images/coffee-beans.png");
 	background-repeat: repeat-x;	
 	background-color: #f7c282;

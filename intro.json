@@ -6,12 +6,12 @@ var tab = function () {
 var message = [
     {
         "date": "all",
-        "content": tab + "Hello! I am Angelo Rosamiran, a Computer Engineering student. Aside from what I am learning in school, I am also passionate about programming - especially on the web development and designing front."
+        "content": tab + 
     },
 
     {
         "date": 2016,
-        "content": "&nbsp;&nbsp;&nbsp;&nbsp;In my free-time I read e-books about web-development and go through the exercises by creating websites (like this) to test my understanding. I also do designs (lanyards and shirts)."
+        "content": ""
     },
 
     {
