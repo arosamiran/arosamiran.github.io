@@ -138,8 +138,12 @@ img{
 		background: linear-gradient(to bottom right, #E8E1C4, #C3DAD1);
 	}
 
-	.text{
-		color:  #deeaee;		
+	blockquote, .link, .text{
+		color:  #50394c;		
+	}
+
+	.link{
+		border-bottom: 1px dotted #50394c;
 	}
 
 	.header, .title, .caption{

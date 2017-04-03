@@ -24,7 +24,6 @@ function init() {
 	lHolder = document.getElementById('links');
 	// console.log(wHolder);
 
-	introcolor = document.getElementById("introcolor");
 
 	var introHeight = iHolder.clientHeight;
 	var worksHeight = wHolder.clientHeight;
@@ -43,7 +42,7 @@ function init() {
 	var dividerHandler = [document.getElementById('iw'), document.getElementById('wc'), document.getElementById('cl')];
 	
 
-	if (screenWidth <= 1280) {
+	if (screenHeight <= 700) {
 		// screenHeight = screenWidth;
 		mobile(wrapper, screenHeight, screenWidth, introHeight, worksHeight, linksHeight);
 	} else{
@@ -57,7 +56,6 @@ function init() {
 }
 
 function desktop(w, sh) {
-	introcolor.style.height = sh + "px";
 	for (var i = 0; i < w.length; i++) {
 		w[i].style.height = sh + "px";
 	}

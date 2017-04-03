@@ -247,11 +247,9 @@ a{
 
 .works .header{
 	background-color: transparent;
-	color: #ECF0F1;
+	color: #deeaee;
 	display: block;
-	font-weight: lighter;
 	text-align: center;
-	opacity: 1;
 	/*font-size: 2.5em;*/
 	/*background-color: rgba(52, 73, 94, 0.2);
 	margin-top: 0%;*/
@@ -527,6 +525,10 @@ a{
 
 	#works{
 		background-image: url('../images/Background.jpg');		
+	}
+
+	.works .header, .works .title{
+		color: #50394c;
 	}
 
 	#wc{
