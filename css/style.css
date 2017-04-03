@@ -6,8 +6,53 @@ html, body{
 
 *{
 	box-sizing: border-box;
-	font-family: "Segoe UI", sans-serif;
 }
+
+@font-face {
+    font-family: 'text-b';
+    src: url('../fonts/text-b-webfont.woff2') format('woff2'),
+         url('../fonts/text-b-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'text-bi';
+    src: url('../fonts/text-bi-webfont.woff2') format('woff2'),
+         url('../fonts/text-bi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'text-i';
+    src: url('../fonts/text-i-webfont.woff2') format('woff2'),
+         url('../fonts/text-i-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'text';
+    src: url('../fonts/text-r-webfont.woff2') format('woff2'),
+         url('../fonts/text-r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*
 .menu-right{
 	top: 5px;
@@ -117,7 +162,7 @@ a{
 .header{
 	font-size: 2.5em;
 	/*text-decoration: none;*/
-	font-family: "Segoe UI", sans-serif;
+	font-family: text, sans-serif;
 	font-weight: lighter;
 	padding: 20px;
 }
@@ -136,7 +181,7 @@ a{
 
 .text{
 	/*font-family: "Microsoft Yi Baiti", sans-serif;*/
-	font-family: "Segoe UI", sans-serif;
+	font-family: text, sans-serif;
 	font-size: 1.25em;
 	font-weight: lighter;
 	text-decoration: none;
@@ -154,23 +199,26 @@ a{
 	/*background-color: #572E1B;*/
 }
 
-.doodlr-s{
-	width: 50%;
-	/*border: 1px #aaa dotted;*/
+.h-line{
+	position: absolute;
+	top: 300px;
+	left: 0px;
+	right: 0px;
+	z-index: 98;
+}
+
+.s-doodlr img{	
+	width: 150px;
 	border-radius: 100%;
-	margin-top: 20px
+	border: 1px #aaa dotted;
 }
 
 .s-doodlr{
-	/*border: 1px #000 solid;*/
+	position: absolute;
+	height: 150px;	
 	text-align: center;
-	margin: auto;
-	width: 20%;
-	/*border-radius: 250px;*/
-}
-
-.s-doodlr img{
-	width: 100%;
+	margin: 0px auto;
+	border: 1px solid #000;	
 }
 
 .date{
@@ -427,11 +475,6 @@ a{
 		font-size: 1.35em;
 	}
 
-	.doodlr-s{
-		width: 50%;
-		border-radius: 100%;
-	}
-
 	.header{
 		font-size: 2.6em;
 	}
@@ -473,9 +516,6 @@ a{
 }
 
 @media screen and (min-width: 1000px){
-	.doodlr-s{
-		width: 25%;
-	}
 
 	#introbg{
 		position: absolute;

@@ -1,9 +1,54 @@
+@font-face {
+    font-family: 'text-b';
+    src: url('../fonts/text-b-webfont.woff2') format('woff2'),
+         url('../fonts/text-b-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'text-bi';
+    src: url('../fonts/text-bi-webfont.woff2') format('woff2'),
+         url('../fonts/text-bi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'text-i';
+    src: url('../fonts/text-i-webfont.woff2') format('woff2'),
+         url('../fonts/text-i-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'text';
+    src: url('../fonts/text-r-webfont.woff2') format('woff2'),
+         url('../fonts/text-r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
 	background: -webkit-gradient(linear, left top, from(#4040a1), to(#9B59B6));
 	background: -webkit-linear-gradient(top, #4040a1, #9B59B6);
 	background: -moz-linear-gradient(top, #4040a1, #9B59B6);
 	background: linear-gradient(to bottom right, #4040a1, #9B59B6);
-	font-family: "Segoe UI", sans-serif;
+	font-family: text, sans-serif;
 	font-size: 100%;
 	box-sizing: border-box;
 }
@@ -31,7 +76,7 @@ blockquote{
 }
 
 .text{
-	font-family: "Segoe UI", sans-serif;
+	font-family: text, sans-serif;
 	font-size: 1.25em;
 	font-weight: lighter;
 	color: #fff;
