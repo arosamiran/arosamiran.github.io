@@ -1,43 +1,16 @@
 @font-face {
-    font-family: 'text-b';
-    src: url('../fonts/text-b-webfont.woff2') format('woff2'),
-         url('../fonts/text-b-webfont.woff') format('woff');
+    font-family: 'heading';
+    src: url('../fonts/heading-webfont.woff2') format('woff2'),
+         url('../fonts/heading-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-
-
-
-
-@font-face {
-    font-family: 'text-bi';
-    src: url('../fonts/text-bi-webfont.woff2') format('woff2'),
-         url('../fonts/text-bi-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'text-i';
-    src: url('../fonts/text-i-webfont.woff2') format('woff2'),
-         url('../fonts/text-i-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 @font-face {
     font-family: 'text';
-    src: url('../fonts/text-r-webfont.woff2') format('woff2'),
-         url('../fonts/text-r-webfont.woff') format('woff');
+    src: url('../fonts/text-webfont.woff2') format('woff2'),
+         url('../fonts/text-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -84,6 +57,7 @@ blockquote{
 }
 
 .title{
+	font-family: heading, serif;
 	color: #fff;
 	font-size: 1.75em;
 	text-decoration: none;
@@ -94,6 +68,7 @@ blockquote{
 }
 
 .header{
+	font-family: heading, serif;	
 	color: #fff;
 	font-size: 1.5em;
 	text-decoration: none;
@@ -115,8 +90,8 @@ img{
 	text-decoration: none;
 	opacity: 0.8;
 	transform: opacity, 0.2s;
-	color: #34495e;
-	border-bottom: 1px #34495e dotted;
+	color:  #deeaee;
+	border-bottom: 1px  #deeaee dotted;
 }
 
 .link:hover{
@@ -164,7 +139,7 @@ img{
 	}
 
 	.text{
-		color: #34495e;		
+		color:  #deeaee;		
 	}
 
 	.header, .title, .caption{

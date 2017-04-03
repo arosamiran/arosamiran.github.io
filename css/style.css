@@ -8,46 +8,20 @@ html, body{
 	box-sizing: border-box;
 }
 
+
 @font-face {
-    font-family: 'text-b';
-    src: url('../fonts/text-b-webfont.woff2') format('woff2'),
-         url('../fonts/text-b-webfont.woff') format('woff');
+    font-family: 'heading';
+    src: url('../fonts/heading-webfont.woff2') format('woff2'),
+         url('../fonts/heading-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-
-
-
-
-@font-face {
-    font-family: 'text-bi';
-    src: url('../fonts/text-bi-webfont.woff2') format('woff2'),
-         url('../fonts/text-bi-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'text-i';
-    src: url('../fonts/text-i-webfont.woff2') format('woff2'),
-         url('../fonts/text-i-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 @font-face {
     font-family: 'text';
-    src: url('../fonts/text-r-webfont.woff2') format('woff2'),
-         url('../fonts/text-r-webfont.woff') format('woff');
+    src: url('../fonts/text-webfont.woff2') format('woff2'),
+         url('../fonts/text-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -162,7 +136,7 @@ a{
 .header{
 	font-size: 2.5em;
 	/*text-decoration: none;*/
-	font-family: text, sans-serif;
+	font-family: heading, sans-serif;
 	font-weight: lighter;
 	padding: 20px;
 }
@@ -177,6 +151,7 @@ a{
 	font-weight: lighter;
 	text-align: center;
 	font-size: 1.5em;
+	font-family: heading, sans-serif;
 }
 
 .text{
@@ -199,26 +174,18 @@ a{
 	/*background-color: #572E1B;*/
 }
 
-.h-line{
-	position: absolute;
-	top: 300px;
-	left: 0px;
-	right: 0px;
-	z-index: 98;
-}
 
 .s-doodlr img{	
 	width: 150px;
 	border-radius: 100%;
-	border: 1px #aaa dotted;
+	/*border: 1px #aaa dotted;*/
 }
 
 .s-doodlr{
-	position: absolute;
 	height: 150px;	
 	text-align: center;
-	margin: 0px auto;
-	border: 1px solid #000;	
+	margin: 20px auto;
+	/*border: 1px solid #000;	*/
 }
 
 .date{
