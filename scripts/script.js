@@ -1,9 +1,10 @@
 window.onload = init;
-
 var position = [], counter = 0;
+var tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
 
 function init() {
+	
 	// footer
 	var versionMonth = document.getElementById("month");
 	versionMonth.innerHTML = new Date().getMonth();

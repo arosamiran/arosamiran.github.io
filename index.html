@@ -5,7 +5,7 @@
 	<meta name="author" content="Angelo Rosamiran">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Angelo Rosamiran</title>
-	<link rel="icon" type="image/svg" href="../images/doodlr.ico">
+	<link rel="icon" type="image/svg" href="images/doodlr.ico">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script>
@@ -19,7 +19,12 @@
 		ga('send', 'pageview');
 
 		function thanks(){
-			document.getElementById('followBtn').innerHTML = "Thanks!";
+			var follow = document.getElementById('followBtn');
+			follow.classList += " hide";
+			var thanksMsg = document.getElementById("thanks");
+			thanksMsg.style.color = "white";
+			thanksMsg.style.opacity = 0.4;
+			thanksMsg.classList = "show text";
 		}
 	</script>
 </head>
@@ -53,11 +58,13 @@
 					Hello! I am Angelo Rosamiran, a Computer Engineering student. Aside from what I am learning in school, I am also passionate about programming - especially on the web development and designing front.
 				</p>
 				<!--<div><span class="date text">2017</span></div>-->
-				<p class="text">
-				</p>
 				<!--<div><span class="date text">2016</span></div>				-->
 				<p class="text">
 					In my free-time I read e-books about web-development and go through the exercises by creating websites (like this) to test my understanding. I also do designs (lanyards and shirts).
+				</p>
+
+				<p class="text">
+					Through self-studying, I've learned how to program with JavaScript and C#. Currently, I'm studying how to use Angular.js, React.js, Node.js and canvas animations. I'm a certified self-starter and occasionally blogs about what I do. 
 				</p>
 			</div>
 			<!--<script>
@@ -130,7 +137,7 @@
 		<div class="flex">
 			<div class="heading-holder"><span class="header">Contact me</span></div>
 			<div class="tweet text">Send me a <a class="twitter-share-button" target="_new" href="https://twitter.com/intent/tweet?text=@arosamiran">tweet</a></div>
-			<div style="text-align: center;"><a href="https://twitter.com/arosamiran" target="_new" onclick="thanks()" id="followBtn" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @arosamiran</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+			<div style="text-align: center;"><a href="https://twitter.com/arosamiran" target="_new" onclick="thanks()" id="followBtn" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @arosamiran</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span id="thanks" class="hide">Thanks!</span></div>
 		</div>
 	</div>
 	<!--<div class="divider" id="cl"></div>-->
