@@ -212,6 +212,12 @@ a{
 	color: #000;
 }
 
+.intro .links{
+	color: #000;
+	opacity: 0.8;
+}
+
+
 /*#iw{
 	background: -webkit-linear-gradient(#d9ad7c, #4040a1);
 	background: -o-linear-gradient(#d9ad7c, #4040a1); 
