@@ -1,16 +1,9 @@
 window.onload = init;
 var position = [], counter = 0;
-var tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
 
 function init() {
 	
-	// footer
-	var versionMonth = document.getElementById("month");
-	versionMonth.innerHTML = new Date().getMonth();
-	var versionYear = document.getElementById("year");
-	versionYear.innerHTML = new Date().getFullYear();
-
 	menuHandler = document.getElementById('menu');
 	menuHandler.style.position = "fixed";
 	menuHandler.style.top = "5px";
@@ -47,7 +40,7 @@ function init() {
 		// screenHeight = screenWidth;
 		mobile(wrapper, screenHeight, screenWidth, introHeight, worksHeight, linksHeight);
 	} else{
-		desktop(wrapper, screenHeight);
+		desktop(wrapper, screenHeight, screenWidth);
 		// menuHandler.style.display = "none";
 		
 		for (var i = 0; i < dividerHandler.length; i++) {
@@ -56,9 +49,10 @@ function init() {
 	}
 }
 
-function desktop(w, sh) {
+function desktop(w, sh, sw) {
 	for (var i = 0; i < w.length; i++) {
 		w[i].style.height = sh + "px";
+		w[i].style.width = sw + "px";
 	}
 }
 
