@@ -42,6 +42,7 @@ blockquote{
 }
 
 .date{
+	margin: 5px;
 	font-weight: bold;
 	padding: 10px;
 	background-color: #000;

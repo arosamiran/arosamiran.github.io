@@ -1,0 +1,141 @@
+#calendar ul {
+	list-style-type: none;
+}
+
+#calendar #year{
+	font-size: 1.15em;
+}
+
+#calendar #month{
+	font-size: 1.5em;
+}
+
+/* Month header */
+#calendar .month {
+	padding: 70px 10px;
+	width: inherit;
+	background: #A01709;
+}
+
+/* Month list */
+#calendar .month ul {
+	margin: 0;
+	padding: 0;
+}
+
+#calendar .month ul li {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+/* Weekdays (Mon-Sun) */
+#calendar .weekdays {
+	margin: 0;
+	padding: 10px 0;
+	background-color:#ddd;
+	font-size: 1.15em;
+}
+
+#calendar .weekdays ul{
+	width: inherit;
+}
+
+#calendar .weekdays li {
+	display: inline-block;
+	width: 13.6%;
+	color: #666;
+	text-align: center;
+}
+
+/* Days (1-31) */
+#calendar .days {
+	padding: 10px 0;
+	background: #eee;
+	margin: 0;
+}
+
+#calendar .days ul{
+	width: inherit;
+}
+
+#calendar .days li {
+	list-style-type: none;
+	display: inline-block;
+	width: 13.6%;
+	text-align: center;
+	margin-bottom: 5px;
+	font-family: Verdana;
+	padding: 10px 0px;
+}
+
+/* Highlight the "current" day */
+#calendar .holiday {
+	color: #A01709;
+}
+
+#calendar .holiday:hover{
+	text-decoration: underline;
+}
+
+#calendar .sunday{
+	background-color: transparent;
+	color: #A01709;
+}
+
+#calendar .today{
+	background-color: #A01709;
+	color: white !important
+}
+
+#calendar .tooltip{
+	position: relative;
+    display: inline-block;
+}
+
+#calendar .tooltip{
+	cursor: help;
+}
+
+/* Tooltip text */
+#calendar .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+#calendar .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#calendar .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    font-family: Corbel, sans-serif;
+    padding: 5px 10px;	
+}

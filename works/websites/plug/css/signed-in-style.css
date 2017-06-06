@@ -1,0 +1,51 @@
+.schoolName{
+	font-family: Calibri, serif;
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: -1px;
+}
+
+.schoolNameHolder{
+	background-color: #C0392B;
+	padding: 20px;
+	color: #FAFEFF;
+}
+
+
+/*
+08-21-2016, 4:00 PM
+
+.etc{
+	text-align: center;
+}
+
+.main{
+	text-align: center;
+}
+
+.quickInfo{
+	width: 250px;
+}
+
+.studentPicture{
+	height: 250px;
+	border: 1px dotted #aaa;
+	border-radius: 5px;
+}
+
+.studentNumber{
+	height: 20px;
+	border: 1px solid #111;
+}
+
+.menu{
+	width: 100%;
+}
+
+.menu a{
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding: 5px 2px;
+	border: 1px #111 solid;
+}*/

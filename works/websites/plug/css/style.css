@@ -1,0 +1,116 @@
+body{
+	font-size: 100%;
+	background-color: #ededed;
+	color: #000;
+}
+body, input, textarea, select, button{
+	font-family: Corbel, Calibri, sans-serif;
+}
+
+#logo{
+	position: absolute;
+	top: -60px;
+	left: 20px;
+}
+
+.main-wrapper{
+	width: 1000px;
+	margin: 100px auto;
+	background-color: #A01709;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.heading-holder{
+	background-color: #A01709;
+	padding: 5px;
+	color: #ECF0F1;
+}
+
+.inside{
+	background-color: #ededed;
+	margin: 0px 5px;
+	width: 990px;
+	height: initial;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-weight: normal;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+.h1{
+	font-size: 2.3em;
+}
+
+.h2{
+	font-size: 2.2em;
+}
+
+.h3{
+	font-size: 2.1em;
+}
+
+.h4{
+	font-size: 2em;
+}
+
+.h5{
+	font-size: 1.9em;
+}
+
+.h6{
+	font-size: 1.8em;
+}
+
+.form{
+	margin: 30px auto;
+	border-spacing: 5px;
+	width: 500px;
+}
+
+.first{
+	width: 40%;
+	text-align: right;
+	padding-right: 5px; 
+}
+
+input[type=text], input[type=email], input[type=password], button, select, input[type=date], input[type=number], textarea{
+	font-size: 1.0001em;
+}
+
+
+.link{
+	text-decoration: none;
+	opacity: 0.8;
+	transition: all, 0.2s;
+	color: #000;
+}
+
+.link:hover{
+	opacity: 1;
+	border-bottom: 1px dotted #000;
+}
+
+.button{
+	font-size: 1.1em;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #000;
+	text-align: center;
+	padding: 10px 30px;
+	transition: opacity, 0.2s;
+	cursor: pointer;
+	margin: 5px;
+	border: 1px solid #000;
+	opacity: 0.5;
+}
+
+.button:hover{
+	opacity: 1;
+}
+
+.sn{
+	width: 50px;
+}
