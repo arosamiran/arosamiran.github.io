@@ -46,7 +46,8 @@ blockquote{
 	font-weight: bold;
 	padding: 10px;
 	background-color: #000;
-	color: white !important
+	color: white !important;
+	display: inline-block;
 }
 
 .text{

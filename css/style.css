@@ -189,7 +189,6 @@ a{
 
 #intro{
 	/*background-color: #fff;*/
-	padding: 20px;
 	background-image: url("../images/coffee-beans.png");
 	background-repeat: repeat-x;	
 	background-color: #f7c282;
@@ -203,6 +202,7 @@ a{
 }
 
 .wrapper{
+	padding: 20px;
 	display: flex;
 	align-items: stretch;
 }
@@ -227,7 +227,6 @@ a{
 
 #works{
 	background-color: #4040a1;
-	padding: 5px;
 	background-image: url("../images/coffee-beans-i.png");
 	background-repeat: repeat-x;
 /*	display: flex;
@@ -272,11 +271,15 @@ a{
 	opacity: 1;	
 }
 
-#wc{
+#wa{
 	background: -webkit-linear-gradient(#4040a1, #fff);
 	background: -o-linear-gradient(#4040a1, #fff);
 	background: -moz-linear-gradient(#4040a1, #fff);
 	background: linear-gradient(#4040a1, #fff);
+}
+
+#recordings{
+	color: rgba(48, 31, 9, 1);
 }
 
 #contact{
@@ -330,7 +333,6 @@ a{
 	background-color: #3b3a30;
 /*	display: flex;
 	align-items: stretch;*/
-	padding: 20px;
 	background-image: url("../images/coffee-beans-i.png");
 	background-repeat: repeat-x;
 }
@@ -428,6 +430,7 @@ a{
 }
 
 @media screen and (min-width: 720px){
+	
 	#wc{
 		background: -webkit-gradient(linear, left top, left bottom, from(#4040a1), to(#fff));
 		background: -webkit-linear-gradient(top, #4040a1, #fff);

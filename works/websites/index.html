@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Angelo Rosamiran">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/svg" href="../images/doodlr.ico">
+	<link rel="icon" type="image/svg" href="../../images/doodlr.ico">
 	<link rel="stylesheet" type="text/css" href="../../css/works.css">
 	<script>
 	// analytics code
@@ -15,10 +15,13 @@
 
 		ga('create', 'UA-76012410-1', 'auto');
 		ga('send', 'pageview');	
-
 		function back(){
 			var backHolder = document.getElementById("back");
 			backHolder.onclick = history.back();
+		}
+
+		function note(sw) {
+			console.log(sw);
 		}
 	</script>
 	<title>Works: Websites</title>
@@ -27,7 +30,7 @@
 	<article>
 		<div>
 			<div class="title">Websites</div>
-			<span class="date">2017</span>
+			<!--<span class="date">2017</span>
 			<p class="text">
 				I've read on a <a href="#" class="link">group on Facebook</a> that, to good in making websites, try to convert PSD files to HTML and CSS files.
 			</p>
@@ -35,7 +38,7 @@
 				Here are my works:
 			</p>
 			<p class="text"><a href="plug/index.php" class="link">plug</a></p>
-			<span class="date">2016</span>
+			<span class="date">2016</span>-->
 				<h3 class="text">A little trip down memory lane</h3>
 
 				<p class="text">
@@ -54,11 +57,11 @@
 				
 				<p class="text">Ok, let me tell you this early on that the following are just screenshots. I'm still working on having them to be viewable in this frame.</p>
 
+				<div class="thumb-holder-c">
 				<h4 class="header">Static sites</h4>
 
-				<div class="thumb-holder-c">
-					<a href="images/maker-party.jpg">
-						<img src="../images/maker-party.jpg" alt="Sample site I've created during the Maker Party for Teachers by Mozilla Philippines">
+					<a href="maker/index.html">
+						<img src="images/maker-party.jpg" alt="Sample site I've created during the Maker Party for Teachers by Mozilla Philippines">
 					</a>
 					<figcaption class="caption">Maker Party Webpage</figcaption>
 				</div>
@@ -69,10 +72,10 @@
 				
 				<div class="thumb-holder-c">
 					<a href="images/tesda.jpg">
-						<img src="../images/tesda.jpg" alt="The site I've created when I've attended a class sponsored by TESDA">
+						<img src="images/tesda.jpg" alt="The site I've created when I attended a class sponsored by TESDA" onmouseover="note(screen.width)">
 					</a>
 				</div>
-
+				<p class="text"></p>
 				<p class="text">
 					This is a site I have created when I attended a class sponsored by TESDA last July of 2015. Unfortunately I wasn't able to finish the class because of my health condition. Still I am able to build sites though I feel really dejected because I wasn't able to finish the course. The topics to be discussed to us includes HTML, CSS, JavaScript and PHP. We we're entering the CSS topic when I left.
 				</p>
@@ -84,8 +87,8 @@
 				<h4 class="header">Dynamic sites</h4>
 
 				<div class="thumb-holder-c">
-					<a href="images/battleship.jpg">
-						<img src="../images/battleship.jpg" alt="Recreating a classic arcade game - Battleship">
+					<a href="battleship/index.html">
+						<img src="images/battleship.jpg" alt="Recreating a classic arcade game - Battleship">
 					</a>
 				</div>
 
@@ -98,7 +101,7 @@
 
 				<div class="thumb-holder-c">
 					<a href="images/school.jpg">
-						<img src="../images/school.jpg" alt="Supposed college website">
+						<img src="images/school.jpg" alt="Supposed college website">
 					</a>
 				</div>
 
