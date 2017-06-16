@@ -125,7 +125,7 @@ a{
 }
 
 .header{
-	font-size: 1.5em;
+	font-size: 2em;
 	/*text-decoration: none;*/
 	font-family: heading, sans-serif;
 	font-weight: lighter;
@@ -269,7 +269,7 @@ a{
 	background: linear-gradient(#4040a1, #fff);
 }
 
-#recordings{
+.alamat .header{
 	color: rgba(48, 31, 9, 1);
 }
 
@@ -444,13 +444,10 @@ a{
 }
 
 @media screen and (min-width: 1000px){
-	#intro{
-		background-image: url("../images/coffee-beans-d.png");
-		background-position: left bottom;
-		background-repeat: repeat-x;
-		z-index: 99;
+	.divider{
+		display: none;
 	}
-
+	
 	.parallax{
 		/* Full height */
 		height: 100%; 
@@ -460,6 +457,13 @@ a{
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+	
+	#intro{
+		background-image: url("../images/coffee-beans-d.png");
+		background-position: left bottom;
+		background-repeat: repeat-x;
+		z-index: 99;
 	}
 
 	#works{
@@ -481,11 +485,7 @@ a{
 	.alamat .header{
 		background-color: #000;
 		padding: 20px;
-
-	}
-
-	#recordings{
-		color: #fff;
+		color: rgba(255, 255, 255, 0.9);
 	}
 
 	#links{
