@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/svg" href="images/doodlr.ico">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="scripts/script.js"></script>
+	<!--<script type="text/javascript" src="scripts/beta.js"></script>-->
 	<!--<script src="../../aframe/aframe/dist/aframe-master.js"></script>-->
 	<script>
 	// analytics code
@@ -18,15 +19,6 @@
 
 		ga('create', 'UA-76012410-1', 'auto');
 		ga('send', 'pageview');
-
-		function thanks(){
-			var follow = document.getElementById('followBtn');
-			follow.classList += " hide";
-			var thanksMsg = document.getElementById("thanks");
-			thanksMsg.style.color = "white";
-			thanksMsg.style.opacity = 0.4;
-			thanksMsg.classList = "show text";
-		}
 	</script>
 </head>
 <body>
@@ -53,7 +45,7 @@
 	<div class="intro wrapper parallax" id="intro">
 		<div class="flex">
 			<div class="s-doodlr">
-				<a href="blog.php" class="link"><img src="images/doodlr.PNG" alt="Doodlr logo"></a>
+				<a href="http://arosamiran.me" class="link"><img src="images/doodlr.PNG" alt="Doodlr logo"></a>
 			</div>
 			<div id="about">
 				<p class="text">
@@ -87,19 +79,19 @@
 		</div>
 	</div>
 
-	<div class="buttons-1">
+	<!--<div class="buttons-1">
 		<div class="button-1"></div>
 		<div class="button-2"></div>
 	</div>
 	<div class="buttons-2">
 		<div class="button-3"></div>
 		<div class="button-4"></div>
-	</div>
+	</div>-->
 	<!--<div class="divider" id="iw"></div>-->
 	<!-- <div id="wbg" class="bg"></div> -->
 	<div class="works wrapper parallax" id="works">
 		<div class="flex">
-			<div id="works-header"><span class="header">Works</span></div>
+			<div><span class="header">Works</span></div>
 				<div class="holder">
 					<a href="works/designs_animations.html">
 						<div>
@@ -135,10 +127,12 @@
 
 	<div class="divider" id="wa"></div>
 
-	<div class="alamat wrapper parallax" id="alamat">
+	<div class="alamat wrapper parallax">
 		<div class="flex">
 			<a href="mga-alamat/index.html">
-				<div class="header" id="recordings">Recordings</div>
+				<div class="header">
+					<div class="header" id="recordings">Recordings</div>
+				</div>
 			</a>
 		</div>
 	</div>
@@ -149,7 +143,7 @@
 	<div class="contact wrapper parallax" id="contact">
 		<div class="flex">
 			<div class="heading-holder"><span class="header">Contact me</span></div>
-			<div class="text">I'm available for hire! Also, I'm looking for an open source projects I can contribute to.</div>
+			<div class="text">I'm available for hire! Also, I'm looking for open source projects I can contribute to.</div>
 			<div class="tweet text">Send me a <a class="twitter-share-button" target="_new" href="https://twitter.com/intent/tweet?text=@arosamiran">tweet</a></div>
 			<div style="text-align: center;"><a href="https://twitter.com/arosamiran" target="_new" onclick="thanks()" id="followBtn" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @arosamiran</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span id="thanks" class="hide">Thanks!</span></div>
 			<div style="text-align: center;"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Farosamiran.me&width=25px&layout=button_count&action=like&show_faces=true&share=false&height=21&appId" width="75px" height="21" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>

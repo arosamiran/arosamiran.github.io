@@ -14,6 +14,7 @@ function init() {
 	// menuHandler.className += "menu-right";
 	iHolder = document.getElementById('intro');
 	wHolder = document.getElementById('works');
+	aHolder = document.getElementById('alamat');	
 	cHolder = document.getElementById('contact');
 	lHolder = document.getElementById('links');
 	// console.log(wHolder);
@@ -21,10 +22,11 @@ function init() {
 
 	var introHeight = iHolder.clientHeight;
 	var worksHeight = wHolder.clientHeight;
+	var alamatHeight = aHolder.clientHeight;	
 	var contactHeight = cHolder.clientHeight;
 	var linksHeight = lHolder.clientHeight;
 	// wrapper Array
-	var wrapper = [iHolder, wHolder, cHolder, lHolder];
+	var wrapper = [iHolder, wHolder, aHolder, cHolder, lHolder];
 	// console.log(introHeight);
 
 	// device's height
@@ -33,7 +35,7 @@ function init() {
 	// device's width
 	var screenWidth = screen.width;
 
-	var dividerHandler = [document.getElementById('iw'), document.getElementById('wc'), document.getElementById('cl')];
+	var dividerHandler = [document.getElementById('iw'), document.getElementById('wa'), document.getElementById('cl')];
 	
 
 	if (screenHeight <= 700) {
@@ -79,9 +81,9 @@ function mobile(w, sh, sw, ih, wh, lh) {
 				position.push(wh + "px");
 				w[2].style.height = sh + "px";
 			break;
-			case 3:
+			case 4:
 				position.push(sh + "px");
-				w[3].style.height = sh + "px";
+				w[4].style.height = sh + "px";
 			break;
 			default:
 				window.alert("Height definition is incorrect");
