@@ -1,8 +1,7 @@
 body{
     padding: 20px;
 }
-.audio{
-    /*border: 1px solid black;*/
+/*.audio{
     margin-bottom: 5px;
 }
 
@@ -22,4 +21,14 @@ body{
 
 .link:hover{
 	opacity: 1;	
+}*/
+
+.recordings-holder{
+    border: 1px solid black;   
+}
+
+.recordings-holder .recording{
+    border: 1px dotted black;
+    /*display: inline-block;*/
+    margin: 0px auto;
 }
