@@ -1,39 +1,15 @@
-/*custom fonts*/
-@font-face {
-    font-family: 'heading';
-    src: url('../fonts/heading-webfont.woff2') format('woff2'),
-         url('../fonts/heading-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+body{
+    background-color: #424242;
 }
 
-@font-face {
-    font-family: 'text';
-    src: url('../fonts/text-webfont.woff2') format('woff2'),
-         url('../fonts/text-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+.doodlr-holder{
+    border: 1px solid #fff;
+    width: 20%;
+    margin: auto;    
+    display: block;
+    align-items: stretch;    
 }
 
-.text{
-    font-family: text, sans-serif;
-}
-
-.header{
-    font-family: heading, serif;
-    font-size: 2.5em;
-}
-
-.center{
-    text-align: center;
-}
-
-.date{
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
+.doodlr{
+    width: 20%;
 }
