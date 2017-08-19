@@ -5,27 +5,16 @@ body{
 header{
     width: 80%;
     margin: 0px auto;
-    border: 1px dotted #000;
+    border-bottom: 2px solid #BD5532;    
     text-align: center;
 }
 
-main{
-    width: 80%;
-    height: 500px;
-    background-color: green;
-}
-#wrapper{
-    background-color: #ececec;
-    margin: 0;  
-}
-
-.logo{
-    width: 15%;
-    margin: 20px;
+header img{
+    width: 20%;
 }
 
 .scene{
-    width: 60%;
-    height: 30%;
-    border: 1px solid black;
+    margin: 10px auto;
+    width: 80%;
+    height: 500px;
 }
