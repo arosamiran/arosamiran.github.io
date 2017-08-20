@@ -2,28 +2,33 @@
 <html lang="en">
 
 <head>
-    <!-- meta tags -->
-    <meta name="author" content="Angelo Rosamiran">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- meta tags -->
+	<meta name="author" content="Angelo Rosamiran">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- favicon -->
-    <link rel="icon" type="image/svg" href="img/doodlr.ico">
+	<!-- favicon -->
+	<link rel="icon" type="image/svg" href="img/doodlr.ico">
 
-    <!-- splash style -->
-    <link rel="stylesheet" href="styles/splash.css">
+	<!-- splash style -->
+	<link rel="stylesheet" href="styles/splash.css">
 
-    <title>Angelo Rosamiran</title>
+	<script src="scripts/aframe-0.6.0.js"></script>
+	<title>Angelo Rosamiran</title>
 
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="flex">
-            <img src="img/doodlr.png" alt="Logo">
-        </div>
-    </div>
+	<a-scene>
+		<a-assets>
+			<img src="img/doodlr.png" alt="Doodlr logo" id="doodlr">
+		</a-assets>
+
+		<a-circle src="#doodlr" radius="0.5" position="0 1.5 -2" rotation="0 0 0"></a-circle>
+		<a-camera position="0 0 0"></a-camera>
+		<a-sky color="#000"></a-sky>
+	</a-scene>
 </body>
 
 </html>

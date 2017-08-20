@@ -1,20 +1,20 @@
-body{
-    background-color: #dfdfdf;
+body {
+	background-color: #dfdfdf;
 }
 
-header{
-    width: 80%;
-    margin: 0px auto;
-    border-bottom: 2px solid #BD5532;    
-    text-align: center;
+header {
+	width: 80%;
+	margin: 0px auto;
+	border-bottom: 2px solid #BD5532;
+	text-align: center;
 }
 
-header img{
-    width: 20%;
+header img {
+	width: 20%;
 }
 
-.scene{
-    margin: 10px auto;
-    width: 80%;
-    height: 500px;
+.scene {
+	margin: 10px auto;
+	width: 80%;
+	height: 500px;
 }
