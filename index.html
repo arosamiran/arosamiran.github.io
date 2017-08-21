@@ -15,9 +15,9 @@
 	<link rel="stylesheet" href="styles/splash.css">
 
 	<!-- local aframe -->
-	<script src="scripts/aframe-0.6.0.js"></script>
+	<!-- <script src="scripts/aframe-0.6.0.js"></script> -->
 
-	<!-- aframe 0.6.1 -->
+	<!-- aframe 0.6.0 -->
 	<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
 	
 	<title>Angelo Rosamiran</title>
@@ -27,13 +27,93 @@
 <body>
 	<a-scene>
 		<a-assets>
-			<img src="img/doodlr.png" alt="Doodlr logo" id="doodlr">
+			<img src="img/doodlr.PNG" alt="Doodlr logo" id="doodlr">
 		</a-assets>
 		
 		<a-box color="blue" position="0 0 -3" depth="3" width="2" height="1"></a-box>
 		<a-circle src="#doodlr" radius="0.5" position="0 1.5 -2" rotation="0 0 0"></a-circle>
+		
+		<!-- camera -->
 		<a-camera position="0 0 0"></a-camera>
+		
+		<!-- sky -->
 		<a-sky color="#000"></a-sky>
+		<a-scene>
+      <a-assets>
+        <a-mixin id="light" geometry="primitive: sphere; radius: 1.5"
+                 material="color: #FFF; shader: flat"
+                 light="color: #DDDDFF; distance: 120; intensity: 2; type: point">
+        </a-mixin>
+        <a-mixin id="torus-knot" geometry="primitive: torusKnot"
+                 material="color: red"></a-mixin>
+      </a-assets>
+
+      <!-- Camera. -->
+      <a-entity position="0 0 80">
+        <a-camera fov="45" user-height="0"></a-camera>
+      </a-entity>
+
+      <!-- Skysphere. -->
+      <a-entity geometry="primitive: sphere; radius: 300"
+                material="color: #111; shader: flat"
+                scale="-1 -1 -1"></a-entity>
+
+      <!-- Lights. -->
+      <a-entity position="0 0 0">
+        <a-animation attribute="rotation" to="0 0 360"
+                     repeat="indefinite" easing="linear" dur="4096">
+        </a-animation>
+        <a-entity mixin="light" position="30 0 0"></a-entity>
+      </a-entity>
+
+      <a-entity position="0 0 0">
+        <a-animation attribute="rotation" to="360 0 0"
+                     repeat="indefinite" easing="linear" dur="4096">
+        </a-animation>
+        <a-entity mixin="light" position="0 0 40"></a-entity>
+      </a-entity>
+    </a-scene>
+
+    <script>
+      var scene = document.querySelector('a-scene');
+
+      for (var i = 0; i < 120; i++) {
+        var obj = document.createElement('a-entity');
+        obj.setAttribute('geometry', {
+          primitive: 'torusKnot',
+          radius: Math.random() * 10,
+          radiusTubular: Math.random() * .75,
+          p: Math.round(Math.random() * 10),
+          q: Math.round(Math.random() * 10)
+        });
+        obj.setAttribute('material', {
+          color: getRandColor(),
+          metalness: Math.random(),
+          roughness: Math.random()
+        });
+        obj.setAttribute('position', {
+          x: getRandCoord(),
+          y: getRandCoord(),
+          z: getRandCoord()
+        });
+        scene.appendChild(obj);
+      }
+
+      function getRandColor () {
+          var letters = '0123456789ABCDEF'.split('');
+          var color = '#';
+          for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+      }
+
+      function getRandCoord () {
+        var coord = Math.random() * 60;
+        return Math.random() < .5 ? coord + 5 : coord * -1 - 5;
+      }
+    </script>
+
 	</a-scene>
 	
 </body>
