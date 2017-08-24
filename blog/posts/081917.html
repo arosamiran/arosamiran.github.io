@@ -15,28 +15,39 @@
 	<link rel="stylesheet" href="../../styles/default.css">
 
 	<!-- local aframe -->
-	<script src="../../scripts/aframe.js"></script>
+	<script src="../../scripts/aframe-0.6.0.js"></script>
 
 	<title>Hello Aframe!</title>
 </head>
 
 <body>
 	<header>
-		<img src="../../img/doodlr.PNG" alt="Doodlr logo" class="logo">
+		<div id="logo-holder">
+			<img src="../../img/doodlr.PNG" alt="Doodlr logo" class="logo">
+		</div>
 	</header>
 
 	<main>
-		<div class="scene">
-			<a-scene embedded="true">
-				<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-				<a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-				<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-				<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-				<a-sky color="#ECECEC"></a-sky>
-			</a-scene>
-
-		</div>
+		<article>
+			<div class="date">
+				<span>August 19, 2017</span>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aspernatur dolorem doloremque explicabo necessitatibus nulla voluptatem aperiam tenetur. A dolor dolorem quasi ipsa iure ullam obcaecati, pariatur praesentium nemo maiores.</p>
+			<div class="scene">
+				<a-scene embedded="true">
+					<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+					<a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+					<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+					<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+					<a-sky color="#ECECEC"></a-sky>
+				</a-scene>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odio eaque consectetur officia, perspiciatis eligendi mollitia, possimus necessitatibus quaerat, explicabo officiis vero? Sint ad totam incidunt optio quis provident neque.</p>
+		</article>				
 	</main>
+	<footer>
+		<p>Created and maintained by: <br> <a href="#">Angelo Rosamiran</a></p>
+	</footer>						
 </body>
 
 </html>
