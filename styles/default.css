@@ -69,3 +69,15 @@ footer a{
 	color: #fff;
 	border-bottom: 1px dotted #fff;
 }
+
+nav{
+	padding: 15% 5% 10% 5%;
+	background-color: #C4B7A6;
+	text-align: center;
+}
+
+nav a{
+	text-decoration: none;
+	color: #a29584;
+	padding: 10px;
+}
