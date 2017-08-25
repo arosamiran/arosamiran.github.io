@@ -15,10 +15,21 @@
 	<link rel="stylesheet" href="styles/splash.css">
 
 	<!-- local aframe -->
-	<script src="scripts/aframe-0.6.0.js"></script>
+	<script src="scripts/aframe-0-6-0.js"></script>
 
 	<!-- aframe 0.6.0 -->
 	<!-- <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script> -->
+	
+	<!-- analytics code -->
+	<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+			ga('create', 'UA-76012410-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 	
 	<title>Angelo Rosamiran</title>
 	
@@ -26,11 +37,16 @@
 
 <body>
 	<a-scene>
-		<a-asset>
-			<img src="img/doodlr.PNG" alt="Doodlr logo" id="doodlr">
-		</a-asset>
-		<a-cylinder src="#doodlr" position="0 1 0" radius="0.5" height="0.001"></a-cylinder>
-  </a-scene>
+		<a-assets>
+			<img src="img/doodlr.jpg" alt="My logo" id="myLogo">
+		</a-assets>
+		<a-box src="#myLogo" position="0 2 -10" rotation="0 45 45" scale="2 2 2">
+			<a-animation attribute="position" to="0 3 -10" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+		</a-box>
+		<a-sky color="#000"></a-sky>
+		<a-light type="ambient" color="#445451"></a-light>
+		<a-light type="point" intensity="1.2" position="0 0 10"></a-light>
+</a-scene>
 </body>
 
 </html>
