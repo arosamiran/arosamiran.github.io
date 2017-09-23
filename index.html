@@ -11,8 +11,8 @@
 	<!-- favicon -->
 	<link rel="icon" type="image/svg" href="img/doodlr.ico">
 
-	<!-- splash style -->
-	<link rel="stylesheet" href="styles/splash.css">
+	<!-- default style -->
+	<link rel="stylesheet" href="styles/default.css">
 
 	<!-- local aframe -->
 	<script src="scripts/aframe-0-6-0.js"></script>
@@ -33,19 +33,14 @@
 </head>
 
 <body>
-	<a-scene>
-		<a-assets>
-			<img src="img/doodlr.jpg" alt="My logo" id="myLogo">
-			<img src="img/sky.jpg" alt="Sky background" id="sky">			
-		</a-assets>
-		<a-box src="#myLogo" position="0 2 -10" rotation="0 45 45" scale="2 2 2">
-			<a-animation attribute="position" to="0 3 -10" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
-		</a-box>
-		<a-sky src="#sky"></a-sky>
-		<a-light type="ambient" color="#445451"></a-light>
-		<a-light type="point" intensity="1.2" position="0 0 10"></a-light>
-</a-scene>
-<div id="version">0.3.5</div>
+	<header>
+		<div id="logo-holder">
+				<img src="img/doodlr.PNG" alt="Doodlr logo">				
+		</div>
+	</header>
+	<section>
+		<div class="scenes"></div>
+	</section>
 </body>
 
 </html>

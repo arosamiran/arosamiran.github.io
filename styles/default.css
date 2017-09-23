@@ -32,6 +32,7 @@ header{
 	margin: auto;
 	position: absolute;
 	bottom: -50px;
+	z-index: 99;
 }
 
 header img{
