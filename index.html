@@ -33,14 +33,17 @@
 </head>
 
 <body>
-	<header>
-		<div id="logo-holder">
-				<img src="img/doodlr.PNG" alt="Doodlr logo">				
-		</div>
-	</header>
-	<section>
-		<div class="scenes"></div>
-	</section>
+	<a-scene>
+		<a-assets>
+			<img src="img/doodlr.jpg" alt="My logo" id="myLogo">
+		</a-assets>
+		<a-box src="#myLogo" position="0 2 -10" rotation="0 45 45" scale="2 2 2">
+			<a-animation attribute="position" to="0 3 -10" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+		</a-box>
+		<a-sky color="#000"></a-sky>
+		<a-light type="ambient" color="#445451"></a-light>
+		<a-light type="point" intensity="1.2" position="0 0 10"></a-light>
+</a-scene>
 </body>
 
 </html>
