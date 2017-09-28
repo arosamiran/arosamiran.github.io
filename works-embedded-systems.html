@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="msvalidate.01" content="EF2FBBA96CB78265E7CD38DEF468CD47">
+	<meta charset="utf-8">
+	<meta name="author" content="Angelo Rosamiran">
+	<title>Embedded Systems by Angelo Rosamiran</title>
+	<link rel="stylesheet" type="text/css" href="coffee.css">
+	<link rel="icon" type="image/svg" href="doodlr.ico">
+	<style type="text/css">
+		#container a:hover{
+			text-decoration: underline;
+		}
+
+		#container p{
+			line-height: 25px;
+			margin: 0px 40px;
+		}
+
+
+
+		#container table{
+			margin: 20px auto;
+		}
+
+		h3{
+			padding-left: 20px;
+		}
+
+		h4{
+			margin: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="defaults.js">
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-76012410-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+
+<header></header>
+
+<div id="holder">
+	<nav>
+		<ul>
+			<li><a href="index.html">Blog</a></li>
+			<li><a class="selected">Works</a></li>
+			<li><a href="index.html"><img src="doodlr.PNG" alt="Doodlr logo" id="logo" /></a></li>
+			<li><a href="links.html">Links</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="container">
+			<h3>RFID-Controlled Doorlock</h3>
+
+			<p>During our junior year we were tasked to create (as project in one of our subjects) something that incorporates an Internet of Things (IoT) device. We came up with an RFID-controlled doorlock using arduino technology.</p>
+
+			<p>Arduino features a microcontroller capable of making decisions based on the user's input. And of course those desicions are based on the logic of the program. If you want to learn more about how to program an Arduino, you can visit this <a href="#">link</a>.</p>
+
+			<table>
+				<tr>
+					<td><img src="atmel.jpg" alt="The ATMEL328"class="materials"><figcaption>The ATMEL328</figcaption></td>
+				</tr>
+			</table>
+
+			<p>At the heart of every Arduino is an ATMEL 168/328 - an integrated circuit (IC) where you upload your program and it then controls (thus it is often reffered to as a microcontroller) how the Arduino reacts to its environment or the user's input. The model number represents the memory of the IC, 168 for 10KB and 328 for the 32KB version.</p>
+
+			<p>So, our project is composed of three main parts: the controller, the reader and a solenoid. The controller is the Arduino and the reader, an RFID  reader we've bought at <a href="#">E-Gizmo</a>.The reader is then composed of a coil - which is The Reader - and a card - the one to be read.</p>
+
+			<p>The solenoid is a doorlock that the Arduino controlls - to give access or make the door open-able or not.</p>
+
+			<h4>How does it work?</h4>
+
+			<p>The project works like this:</p>
+			<ul>
+				<li>A user taps his RFID card,</li>
+				<li>The reader...reads the card - it contains a serial number,</li>
+				<li>The serial is then passed to the Arduino and</li>
+				<li>The Arduino compares the serial number to the serial number coded to it then decides wether the solenoid lock should be open-abe or not.</li>
+			</ul>
+
+			<p>Sounds simple huh? But there's a twist to our project.</p>
+
+			<p>We are not allowed to use an Arduino. I mean, we have to make our own.</p>
+
+			<p>You can find the codes in this <a href="#">repository</a>.</p>
+
+			<table>
+				<caption>Gallery</caption>
+				<tr>
+					<td>Column 1, Row 1</td>
+					<td>Column 2, Row 1</td>
+				</tr>
+				<tr>
+					<td>Column 1, Row 2</td>
+					<td>Column 2, Row 2</td>
+				</tr>
+				<tr></tr>
+			</table>
+
+			<!-- Next work -->
+			<h3>Digital Clock</h3>
+
+			<p>In our senior year we had a project to create a digital clock using only TTL (transistor-transistor logic) integrated circuits.</p>
+
+			<p>You know how digital clocks work. It's just that, after I've done one with this project I've realized that making one is difficult.</p>
+
+			<div class="backHolder">
+				<a href="works.html">Back</a>
+			</div>
+	</div>
+</main>
+	
+<footer>
+	<div>
+		<p id="year"></p>
+	</div>
+</footer>
+</div>
+
+</body>
+</html>
