@@ -1,0 +1,30 @@
+#logo-holder{
+	border: 1px dotted black;
+	margin: 0px auto;
+	width: 30%;		
+}
+
+#logo-holder img{
+	border-radius: 100%;
+	width: 100%;
+}
+
+#menu{
+	background-color: #301F09;
+}
+
+#menu-icon div {
+	width: 35px;
+	height: 5px;
+	background-color: #F7C282;
+	margin: 6px 0;
+}
+
+nav a{
+	display: block;
+	font-family: monospace;
+	color: #F7C282;
+	text-decoration: none;
+	font-size: 1.2em;	
+}
+
