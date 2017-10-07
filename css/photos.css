@@ -1,0 +1,38 @@
+#photosPane ul{
+	column-count: 2;
+	column-fill: balance;
+	column-gap: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+#photosPane li{
+	margin-bottom: 5px;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	/*.modal-content {
+		width: 100%;
+	}*/
+}
+
+@media only screen and (min-width: 700px){
+	/*.modal-content {
+		width: 100%;
+	}*/
+
+	#photosPane ul{
+		column-count: 4;
+	}
+}
+
+.hide{
+	display: none;
+	transition: all, 0.3s;
+}
+
+.appear{
+	display: block;
+	transition: all, 0.3s;
+}

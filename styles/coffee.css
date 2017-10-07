@@ -1,12 +1,13 @@
 #logo-holder{
 	border: 1px dotted black;
-	margin: 0px auto;
 	width: 30%;		
+	position: absolute;
+	left: 45%;
 }
 
 #logo-holder img{
 	border-radius: 100%;
-	width: 100%;
+	width: 100%;		
 }
 
 #menu{
@@ -18,6 +19,10 @@
 	height: 5px;
 	background-color: #F7C282;
 	margin: 6px 0;
+}
+
+nav{
+	position: relative;
 }
 
 nav a{

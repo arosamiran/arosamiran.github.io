@@ -1,0 +1,18 @@
+The Sign Up Form
+
+The sign up form should insert the form's data into tha database.
+
+
+Notes:
+	- Add college selection
+	- Show courses based on the selected college (This is a job for AJAX)
+
+(*) Indicates that the task is done
+
+
+====
+Logs
+
+- Focus muna tayo sa College of Engineering
+
+====
