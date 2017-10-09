@@ -14,7 +14,6 @@ function init() {
 	// menuHandler.className += "menu-right";
 	iHolder = document.getElementById('intro');
 	wHolder = document.getElementById('works');
-	aHolder = document.getElementById('alamat');	
 	cHolder = document.getElementById('contact');
 	lHolder = document.getElementById('links');
 	// console.log(wHolder);
@@ -22,11 +21,10 @@ function init() {
 
 	var introHeight = iHolder.clientHeight;
 	var worksHeight = wHolder.clientHeight;
-	var alamatHeight = aHolder.clientHeight;	
 	var contactHeight = cHolder.clientHeight;
 	var linksHeight = lHolder.clientHeight;
 	// wrapper Array
-	var wrapper = [iHolder, wHolder, aHolder, cHolder, lHolder];
+	var wrapper = [iHolder, wHolder, cHolder, lHolder];
 	// console.log(introHeight);
 
 	// device's height
