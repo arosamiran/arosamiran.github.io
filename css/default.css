@@ -1,4 +1,13 @@
-/*custom fonts*/
+html, body{
+	margin: 0px;
+	height: 100%;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
 @font-face {
     font-family: 'heading';
     src: url('../fonts/heading-webfont.woff2') format('woff2'),
@@ -17,23 +26,461 @@
 
 }
 
-.text{
-    font-family: text, sans-serif;
+/*
+.menu-right{
+	top: 5px;
+	left: 5px;
+}
+*/
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: all;
+}
+
+
+.container {
+	position: fixed;
+	/*display: inline-block;*/
+	cursor: pointer;
+	background-color: transparent;
+	top: 20px;
+	left: 20px;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #818181;
+	margin: 6px 0;
+	transition: 0.5s;
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+	opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+ /* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 99; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	font-family: "Segoe UI", sans-serif;
+}
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 1.5em;
+	/*font-family: "Segoe UI", sans-serif;*/
+	color: #818181;
+	display: block;
+	transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+	font-size: 36px !important;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/*#main {
+	transition: margin-left, .5s;
+	position: absolute;
+	display: inline-block;
+}*/
+
+a{
+	text-decoration: none;
 }
 
 .header{
-    font-family: heading, serif;
-    font-size: 2.5em;
+	font-size: 2em;
+	/*text-decoration: none;*/
+	font-family: heading, sans-serif;
+	font-weight: lighter;
+	padding: 20px;
 }
 
-.center{
-    text-align: center;
+.heading-holder{
+	text-decoration: none;
+	text-align: center;
+	padding: 20px;
+}
+
+.title{
+	font-weight: lighter;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: heading, sans-serif;
+}
+
+.text{
+	/*font-family: "Microsoft Yi Baiti", sans-serif;*/
+	font-family: text, sans-serif;
+	font-size: 1.25em;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+.flex{
+	/*border: 1px #888 dotted;*/
+	margin: auto;
+}
+
+.divider{
+	width: 100%;
+	height: 100px;
+	/*border: 1px #aaa dotted;*/
+	/*background-color: #572E1B;*/
+}
+
+
+.s-doodlr ../img{	
+	width: 150px;
+	border-radius: 100%;
+	/*border: 1px #aaa dotted;*/
+}
+
+.s-doodlr{
+	height: 150px;	
+	text-align: center;
+	margin: 20px auto;
+	/*border: 1px solid #000;	*/
 }
 
 .date{
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #000;
+	color: white !important
+}
+
+#intro{
+	/*background-color: #fff;*/
+	background-image: url("../../img/coffee-beans.png");
+	background-repeat: repeat-x;	
+	background-color: #f7c282;
+	background-position: left bottom;
+}
+
+#about{
+	background-color: rgba(185, 188, 189, 0.5);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.wrapper{
+	padding: 20px;
+	display: flex;
+	align-items: stretch;
+}
+
+.intro .text{
+	margin: 30px;
+	color: #000;
+}
+
+.intro .links{
+	color: #000;
+	opacity: 0.8;
+}
+
+
+/*#iw{
+	background: -webkit-linear-gradient(#d9ad7c, #4040a1);
+	background: -o-linear-gradient(#d9ad7c, #4040a1); 
+	background: -moz-linear-gradient(#d9ad7c, #4040a1);
+	background: linear-gradient(#d9ad7c, #4040a1);
+}*/
+
+#works{
+	background-color: #4040a1;
+	background-image: url("../img/coffee-beans-i.png");
+	background-repeat: repeat-x;
+/*	display: flex;
+	align-items: stretch;*/
+}
+
+.works [class*="work-"]{
+	/*border: 1px #aaa dotted;*/
+	background-color: rgba(185, 188, 189, 0.5);
+	margin-bottom: 5px;
+	padding: 20px;
+	height: 200px;
+	/*height: 20%;*/
+}
+
+.works .header{
+	background-color: transparent;
+	color: #deeaee;
+	display: block;
+	text-align: center;
+}
+
+.works .title{
+	color: #000;
+	opacity: 1;
+	/*position: absolute;*/
+	/*text-decoration: none;*/
+}
+
+.works .text{
+	color: #000;
+	margin: 20px;
+	/*position: absolute;*/
+	opacity: 1;	
+}
+
+
+#contact{
+	background-color: #fff;
+	background-image: url("../img/coffee-beans.png");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+/*	display: flex;
+	align-items: stretch;*/
+}
+
+.contact .tweet{
+	color: #fff;
+	text-align: center;
+}
+
+.contact .header{
+	color: #fff;
+	background-color: rgba(48, 31, 9, 0.6);
+	padding: 20px;
+}
+
+.contact .text{
+	color: #fff;
+	margin: 20px;
+}
+
+
+/*.contact .twitter-share-button{
+	color: #fff;
+	opacity: 0.8;
+	transform: all, 0.2s;
+}*/
+
+.contact .twitter-share-button:hover{
+	color: #55ACEE;
+	opacity: 1;
+}
+
+/*#cl{
+	background: -webkit-linear-gradient(#fff, #3b3a30);
+	background: -o-linear-gradient(#fff, #3b3a30);
+	background: -moz-linear-gradient(#fff, #3b3a30);
+	background: linear-gradient(#fff, #3b3a30);
+}*/
+
+#links{
+	background-color: #3b3a30;
+/*	display: flex;
+	align-items: stretch;*/
+	background-image: url("../img/coffee-beans-i.png");
+	background-repeat: repeat-x;
+}
+
+.links .header{
+	color: #ECF0F1;
+	text-align: center;
+	/*border: 1px #aaa dotted;*/
+	display: block;
+}
+
+.links .text{
+	color: #ECF0F1;
+	/*column-count: 3;*/
+	opacity: 1;
+}
+
+.link-holder [class*="link-"]{
+	background-color: rgba(0, 0, 0, 0.5);
+	/*float: left;*/
+	padding: 20px;
+	width: 100%;
+	/*border: 1px #fff dotted;*/
+	text-align: center;
+}
+
+.links .link-holder{
+	column-gap: 5px;
+	column-count: 2;
+	-webkit-column-count: 2;  /* Chrome, Safari, Opera */ 
+	-moz-column-count: 2 /* Firefox */
+}
+
+.links a{
+	/*column-count: 3;
+	column-fill: balance;*/
+	/*border: 1px solid #fff;*/
+	display: inline-block;
+}
+
+.link-holder .filler{
+	display: none;
+}
+
+.link-holder div{
+	/*display: inline-block;*/
+	/*border: 1px dotted #aaa;*/
+	margin-bottom: 5px;
+}
+@media screen and (orientation: landscape){
+
+	/*.works .title{
+		margin: auto;
+	}
+
+	.works .text{
+		margin: auto;
+	}*/
+
+	#wc{
+		display: none;
+	}
+
+	.contact br{
+		display: none;
+	}
+
+	.contact .btn{
+		clear: both;
+		margin: 20px 0px;
+	}
+
+	.links .link-holder{
+		column-count: 3;
+	}
+
+	.links .filler{
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 720px){	
+	.text{
+		font-size: 1.35em;
+	}
+
+	#works .holder{
+		/*border: 1px dotted #aaa;*/
+		column-count: 2;
+		column-gap: 5px;
+		column-fill: balance;
+	}
+
+	#works .title{
+		font-size: 1.6em;		
+	}
+
+	.contact br{
+		display: none;
+	}
+
+	.contact .btn{
+		clear: both;
+		margin: 20px 0px 0px 0px;
+	}
+	
+	.contact label, .contact .header{
+		color: #ECF0F1;
+	}
+
+	.links .filler, .links [class*="link-"], .links a{
+		display: inline-block;
+	}
+
+	.links .link-holder{
+		column-gap: 5px;
+		column-count: 3;
+		-webkit-column-count: 3;  /* Chrome, Safari, Opera */ 
+		-moz-column-count: 3; /* Firefox */
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.divider{
+		display: none;
+	}
+	
+	.parallax{
+		/* Full height */
+		height: 100%; 
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#intro{
+		background-image: url("../img/coffee-beans-d.png");
+		background-position: left bottom;
+		background-repeat: repeat-x;
+		z-index: 99;
+	}
+
+	#works{
+		background-image: url('../img/background.jpg');		
+	}
+
+	.works .header, .works .title{
+		color: #50394c;
+	}
+	
+	#wc{
+		display: none;
+	}
+
+	#links{
+		background-image: url('imag/fireworks.jpg');		
+	}
+
+	#contact{
+		background-image: url('../img/portrait.jpg');		
+	}
+
+	.footer{
+		background-color: #070B0C;
+	}
+
+	.contact .header{
+		background-color: transparent;
+	}
 }

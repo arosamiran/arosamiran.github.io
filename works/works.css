@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'heading';
-    src: url('../../fonts/heading-webfont.woff2') format('woff2'),
-         url('../../fonts/heading-webfont.woff') format('woff');
+    src: url('../fonts/heading-webfont.woff2') format('woff2'),
+         url('../fonts/heading-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'text';
-    src: url('../../fonts/text-webfont.woff2') format('woff2'),
-         url('../../fonts/text-webfont.woff') format('woff');
+    src: url('../fonts/text-webfont.woff2') format('woff2'),
+         url('../fonts/text-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
