@@ -7,7 +7,7 @@ html, body{
 	box-sizing: border-box;
 }
 
-
+/* custom fonts */
 @font-face {
     font-family: 'heading';
     src: url('../fonts/heading-webfont.woff2') format('woff2'),
@@ -447,13 +447,18 @@ a{
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-	}
+		}
 	
 	#intro{
+border: 1px dotted green;
 		background-image: url("../img/coffee-beans-d.png");
 		background-position: left bottom;
 		background-repeat: repeat-x;
-		z-index: 99;
+	}
+
+	#intro .flex{
+border: 1px dotted blue;
+
 	}
 
 	#works{
@@ -469,7 +474,7 @@ a{
 	}
 
 	#links{
-		background-image: url('imag/fireworks.jpg');		
+		background-image: url('../img/fireworks.jpg');		
 	}
 
 	#contact{
