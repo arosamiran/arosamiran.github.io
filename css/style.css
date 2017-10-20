@@ -1,3 +1,26 @@
+
+/* custom fonts */
+
+@font-face {
+    font-family: 'heading';
+    src: url('../fonts/heading-webfont.woff2') format('woff2'),
+         url('../fonts/heading-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+		
+	}
+	
+	@font-face {
+		font-family: 'text';
+    src: url('../fonts/text-webfont.woff2') format('woff2'),
+		url('../fonts/text-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+		
+}
+
+/* global styles */
+
 html, body{
 	margin: 0px;
 	height: 100%;
@@ -7,24 +30,10 @@ html, body{
 	box-sizing: border-box;
 }
 
-/* custom fonts */
-@font-face {
-    font-family: 'heading';
-    src: url('../fonts/heading-webfont.woff2') format('woff2'),
-         url('../fonts/heading-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+h1, h2, h3, h4, h5, h6{
+	font-family: heading, sans-serif;
 }
 
-@font-face {
-    font-family: 'text';
-    src: url('../fonts/text-webfont.woff2') format('woff2'),
-         url('../fonts/text-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 /*
 .menu-right{
@@ -60,65 +69,6 @@ html, body{
 }
 
 
-/* Rotate first bar */
-.change .bar1 {
-	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-	transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-	opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-	-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-	transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
- /* The side navigation menu */
-.sidenav {
-	height: 100%; /* 100% Full-height */
-	width: 0; /* 0 width - change this with JavaScript */
-	position: fixed; /* Stay in place */
-	z-index: 99; /* Stay on top */
-	top: 0;
-	left: 0;
-	background-color: #111; /* Black*/
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 60px; /* Place content 60px from the top */
-	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-	font-family: "Segoe UI", sans-serif;
-}
-
-/* The navigation menu links */
-.sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 1.5em;
-	/*font-family: "Segoe UI", sans-serif;*/
-	color: #818181;
-	display: block;
-	transition: 0.3s
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-	color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.closebtn {
-	font-size: 36px !important;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-/*#main {
-	transition: margin-left, .5s;
-	position: absolute;
-	display: inline-block;
-}*/
 
 a{
 	text-decoration: none;
@@ -166,13 +116,13 @@ a{
 }
 
 
-.s-doodlr img{	
-	width: 150px;
+.logo img{	
+	width: 100px;
 	border-radius: 100%;
 	/*border: 1px #aaa dotted;*/
 }
 
-.s-doodlr{
+.logo{
 	height: 150px;	
 	text-align: center;
 	margin: 20px auto;

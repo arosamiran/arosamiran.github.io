@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* global styles */
+
+p {
+  font-family: text, sans-serif;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: heading, sans-serif;
+}
+
+
+/* custom fonts */
+
+@font-face {
+  font-family: 'heading';
+  src: url('../fonts/heading-webfont.woff2') format('woff2'), url('../fonts/heading-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'text';
+  src: url('../fonts/text-webfont.woff2') format('woff2'), url('../fonts/text-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+section #intro {
+  /* position: absolute; */
+  padding: 20px;
+  margin: 0;
+  background-image: url('../img/coffee-beans-d.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-color: #f9a4a4;
+}
+
+
+#intro #logo {
+  width: 100px;
+  margin: 20px auto;
+}
+
+#logo img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+#intro article {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+#article p {
+  filter: none;
+  font-weight: bold;
+}
+
+#article .bg{
+  width: 100px;
+  height: 200px;
+  border: 5px solid green;
+}

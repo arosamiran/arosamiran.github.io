@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
 	<!-- meta tags -->
 	<meta charset="utf-8">
 	<meta name="author" content="Angelo Rosamiran">
@@ -17,52 +17,28 @@
 	<!--<script type="text/javascript" src="scripts/beta.js"></script>-->
 	<!--<script src="../../aframe/aframe/dist/aframe-master.js"></script>-->
 	
-	<!-- analytics code -->
-	<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-76012410-1', 'auto');
-			ga('send', 'pageview');
-	</script>
 	<title>Angelo Rosamiran</title>
 </head>
 <body>
 
-	<div id="mySidenav" class="sidenav">
-	<!-- Use any element to open the sidenav -->
-	<span>
-		<div onclick="menuClick(this)" class="container" id="menu">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-		</div>
-	</span>
- 	<a href="#intro" onclick="closeNav(0)">Blog</a>
-	<a href="#works" onclick="closeNav(1)">Works</a>
-	<a href="#contact" onclick="closeNav(2)">Contact me</a>
-	<a href="#links" onclick="closeNav(3)">Links</a>
-</div>
-
-<div id="main">
-	<div class="intro wrapper parallax" id="intro">
+<main>
+	<section class="intro wrapper parallax" id="intro">
 		<div class="flex">
-			<div class="s-doodlr">
+			<div class="logo">
 				<a href="http://arosamiran.me/jay.js" class="link"><img src="img/doodlr.jpg" alt="Doodlr logo"></a>
 			</div>
-			<div id="about">
+			<article id="about">
 				<p class="text">
 					Hey there! What's up? I'm Angelo Rosamiran, fan of web development and everything open source. I'm also interested in designing and photography.
 				</p>
 
-				<p class="text">
+		 		<p class="text">
 					Through self-studying, I've learned how to program with JavaScript. Currently, I'm updating what I know about the language (It's a lifelong process, I think) and canvas animations.
 				</p>
-			</div>
+			</article>
 		</div>
-	</div>
+	</section>
+
 	<div class="works wrapper parallax" id="works">
 		<div class="flex">
 			<div><span class="header">Works</span></div>
@@ -131,7 +107,8 @@
 			</div>
 		</div>
 	</div>
-</div>
+</main>
+<script src="js/analytics.js"></script>
 
 </body>
 </html>
