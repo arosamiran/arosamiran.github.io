@@ -1,36 +1,42 @@
-
 /* custom fonts */
 
 @font-face {
-    font-family: 'heading';
-    src: url('../fonts/heading-webfont.woff2') format('woff2'),
-         url('../fonts/heading-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-		
-	}
-	
-	@font-face {
-		font-family: 'text';
-    src: url('../fonts/text-webfont.woff2') format('woff2'),
-		url('../fonts/text-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-		
+	font-family: 'heading';
+	src: url('../fonts/heading-webfont.woff2') format('woff2'), url('../fonts/heading-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
+
+@font-face {
+	font-family: 'text';
+	src: url('../fonts/text-webfont.woff2') format('woff2'), url('../fonts/text-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 /* global styles */
 
-html, body{
+html,
+body {
 	margin: 0px;
 	height: 100%;
 }
 
-*{
+a {
+	text-decoration: none;
+}
+
+* {
 	box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: heading, sans-serif;
 }
 
@@ -42,14 +48,13 @@ h1, h2, h3, h4, h5, h6{
 }
 */
 
-.hide{
+.hide {
 	display: none;
 }
 
-.show{
+.show {
 	display: all;
 }
-
 
 .container {
 	position: fixed;
@@ -60,7 +65,9 @@ h1, h2, h3, h4, h5, h6{
 	left: 20px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
 	width: 35px;
 	height: 5px;
 	background-color: #818181;
@@ -68,13 +75,7 @@ h1, h2, h3, h4, h5, h6{
 	transition: 0.5s;
 }
 
-
-
-a{
-	text-decoration: none;
-}
-
-.header{
+.header {
 	font-size: 2em;
 	/*text-decoration: none;*/
 	font-family: heading, sans-serif;
@@ -82,20 +83,20 @@ a{
 	padding: 20px;
 }
 
-.heading-holder{
+.heading-holder {
 	text-decoration: none;
 	text-align: center;
 	padding: 20px;
 }
 
-.title{
+.title {
 	font-weight: lighter;
 	text-align: center;
 	font-size: 1.5em;
 	font-family: heading, sans-serif;
 }
 
-.text{
+.text {
 	/*font-family: "Microsoft Yi Baiti", sans-serif;*/
 	font-family: text, sans-serif;
 	font-size: 1.25em;
@@ -103,65 +104,68 @@ a{
 	text-decoration: none;
 }
 
-.flex{
+.flex {
 	/*border: 1px #888 dotted;*/
 	margin: auto;
 }
 
-.divider{
+.divider {
 	width: 100%;
 	height: 100px;
 	/*border: 1px #aaa dotted;*/
 	/*background-color: #572E1B;*/
 }
 
-
-.logo img{	
-	width: 100px;
-	border-radius: 100%;
-	/*border: 1px #aaa dotted;*/
-}
-
-.logo{
-	height: 150px;	
-	text-align: center;
-	margin: 20px auto;
-	/*border: 1px solid #000;	*/
-}
-
-.date{
+.date {
 	font-weight: bold;
 	padding: 10px;
 	background-color: #000;
 	color: white !important
 }
 
-#intro{
-	/*background-color: #fff;*/
-	background-image: url("../../img/coffee-beans.png");
-	background-repeat: repeat-x;	
-	background-color: #f7c282;
-	background-position: left bottom;
+
+/* intro styles */
+
+.logo img {
+	width: 100px;
+	border-radius: 100%;
+	/*border: 1px #aaa dotted;*/
 }
 
-#about{
-	background-color: rgba(185, 188, 189, 0.5);
+.logo {
+	height: 150px;
+	text-align: center;
+	margin: 20px auto;
+	/*border: 1px solid #000;	*/
+}
+
+#intro {
+	/*background-color: #fff;*/
+	background-image: url("../img/coffee-beans.png");
+	background-repeat: repeat-x;
+	background-color: rgba(247,194,130,0.5);
+	background-position: left bottom;
+	position: relative;
+}
+
+#about {
+	background-color: rgba(185, 188, 189, 0.2);
 	padding: 10px;
 	margin-bottom: 20px;
 }
 
-.wrapper{
+.wrapper {
 	padding: 20px;
 	display: flex;
 	align-items: stretch;
 }
 
-.intro .text{
+.intro .text {
 	margin: 30px;
 	color: #000;
 }
 
-.intro .links{
+.intro .links {
 	color: #000;
 	opacity: 0.8;
 }
@@ -174,15 +178,15 @@ a{
 	background: linear-gradient(#d9ad7c, #4040a1);
 }*/
 
-#works{
+#works {
 	background-color: #4040a1;
 	background-image: url("../img/coffee-beans-i.png");
 	background-repeat: repeat-x;
-/*	display: flex;
+	/*	display: flex;
 	align-items: stretch;*/
 }
 
-.works [class*="work-"]{
+.works [class*="work-"] {
 	/*border: 1px #aaa dotted;*/
 	background-color: rgba(185, 188, 189, 0.5);
 	margin-bottom: 5px;
@@ -191,49 +195,48 @@ a{
 	/*height: 20%;*/
 }
 
-.works .header{
+.works .header {
 	background-color: transparent;
 	color: #deeaee;
 	display: block;
 	text-align: center;
 }
 
-.works .title{
+.works .title {
 	color: #000;
 	opacity: 1;
 	/*position: absolute;*/
 	/*text-decoration: none;*/
 }
 
-.works .text{
+.works .text {
 	color: #000;
 	margin: 20px;
 	/*position: absolute;*/
-	opacity: 1;	
+	opacity: 1;
 }
 
-
-#contact{
+#contact {
 	background-color: #fff;
 	background-image: url("../img/coffee-beans.png");
 	background-repeat: repeat-x;
 	background-position: left bottom;
-/*	display: flex;
+	/*	display: flex;
 	align-items: stretch;*/
 }
 
-.contact .tweet{
+.contact .tweet {
 	color: #fff;
 	text-align: center;
 }
 
-.contact .header{
+.contact .header {
 	color: #fff;
 	background-color: rgba(48, 31, 9, 0.6);
 	padding: 20px;
 }
 
-.contact .text{
+.contact .text {
 	color: #fff;
 	margin: 20px;
 }
@@ -245,10 +248,11 @@ a{
 	transform: all, 0.2s;
 }*/
 
-.contact .twitter-share-button:hover{
+.contact .twitter-share-button:hover {
 	color: #55ACEE;
 	opacity: 1;
 }
+
 
 /*#cl{
 	background: -webkit-linear-gradient(#fff, #3b3a30);
@@ -257,28 +261,28 @@ a{
 	background: linear-gradient(#fff, #3b3a30);
 }*/
 
-#links{
+#links {
 	background-color: #3b3a30;
-/*	display: flex;
+	/*	display: flex;
 	align-items: stretch;*/
 	background-image: url("../img/coffee-beans-i.png");
 	background-repeat: repeat-x;
 }
 
-.links .header{
+.links .header {
 	color: #ECF0F1;
 	text-align: center;
 	/*border: 1px #aaa dotted;*/
 	display: block;
 }
 
-.links .text{
+.links .text {
 	color: #ECF0F1;
 	/*column-count: 3;*/
 	opacity: 1;
 }
 
-.link-holder [class*="link-"]{
+.link-holder [class*="link-"] {
 	background-color: rgba(0, 0, 0, 0.5);
 	/*float: left;*/
 	padding: 20px;
@@ -287,31 +291,32 @@ a{
 	text-align: center;
 }
 
-.links .link-holder{
+.links .link-holder {
 	column-gap: 5px;
 	column-count: 2;
-	-webkit-column-count: 2;  /* Chrome, Safari, Opera */ 
-	-moz-column-count: 2 /* Firefox */
+	-webkit-column-count: 2;
+	/* Chrome, Safari, Opera */
+	-moz-column-count: 2/* Firefox */
 }
 
-.links a{
+.links a {
 	/*column-count: 3;
 	column-fill: balance;*/
 	/*border: 1px solid #fff;*/
 	display: inline-block;
 }
 
-.link-holder .filler{
+.link-holder .filler {
 	display: none;
 }
 
-.link-holder div{
+.link-holder div {
 	/*display: inline-block;*/
 	/*border: 1px dotted #aaa;*/
 	margin-bottom: 5px;
 }
-@media screen and (orientation: landscape){
 
+@media screen and (orientation: landscape) {
 	/*.works .title{
 		margin: auto;
 	}
@@ -319,123 +324,105 @@ a{
 	.works .text{
 		margin: auto;
 	}*/
-
-	#wc{
+	#wc {
 		display: none;
 	}
-
-	.contact br{
+	.contact br {
 		display: none;
 	}
-
-	.contact .btn{
+	.contact .btn {
 		clear: both;
 		margin: 20px 0px;
 	}
-
-	.links .link-holder{
+	.links .link-holder {
 		column-count: 3;
 	}
-
-	.links .filler{
+	.links .filler {
 		display: inline-block;
 	}
 }
 
-@media screen and (min-width: 720px){	
-	.text{
+@media screen and (min-width: 720px) {
+	.text {
 		font-size: 1.35em;
 	}
-
-	#works .holder{
+	#works .holder {
 		/*border: 1px dotted #aaa;*/
 		column-count: 2;
 		column-gap: 5px;
 		column-fill: balance;
 	}
-
-	#works .title{
-		font-size: 1.6em;		
+	#works .title {
+		font-size: 1.6em;
 	}
-
-	.contact br{
+	.contact br {
 		display: none;
 	}
-
-	.contact .btn{
+	.contact .btn {
 		clear: both;
 		margin: 20px 0px 0px 0px;
 	}
-	
-	.contact label, .contact .header{
+	.contact label,
+	.contact .header {
 		color: #ECF0F1;
 	}
-
-	.links .filler, .links [class*="link-"], .links a{
+	.links .filler,
+	.links [class*="link-"],
+	.links a {
 		display: inline-block;
 	}
-
-	.links .link-holder{
+	.links .link-holder {
 		column-gap: 5px;
 		column-count: 3;
-		-webkit-column-count: 3;  /* Chrome, Safari, Opera */ 
-		-moz-column-count: 3; /* Firefox */
+		-webkit-column-count: 3;
+		/* Chrome, Safari, Opera */
+		-moz-column-count: 3;
+		/* Firefox */
 	}
 }
 
-@media screen and (min-width: 1000px){
-	.divider{
+@media screen and (min-width: 1000px) {
+	.divider {
 		display: none;
 	}
-	
-	.parallax{
+	.parallax {
 		/* Full height */
-		height: 100%; 
-
+		height: 100%;
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		}
-	
-	#intro{
-border: 1px dotted green;
+	}
+	#intro {
+		border: 1px dotted green;
 		background-image: url("../img/coffee-beans-d.png");
 		background-position: left bottom;
 		background-repeat: repeat-x;
 	}
-
-	#intro .flex{
-border: 1px dotted blue;
-
+	#intro .flex {
+		border: 1px dotted blue;
 	}
-
-	#works{
-		background-image: url('../img/background.jpg');		
+	#works {
+		background-image: url('../img/background.jpg');
 	}
-
-	.works .header, .works .title{
+	.works .header,
+	.works .title {
 		color: #50394c;
 	}
-	
-	#wc{
+	#wc {
 		display: none;
 	}
-
-	#links{
-		background-image: url('../img/fireworks.jpg');		
+	#links {
+		background-image: url('../img/fireworks.jpg');
 	}
-
-	#contact{
-		background-image: url('../img/portrait.jpg');		
+	#contact {
+		background-image: url('../img/portrait.jpg');
 	}
-
-	.footer{
+	.footer {
 		background-color: #070B0C;
 	}
-
-	.contact .header{
+	.contact .header {
 		background-color: transparent;
 	}
 }
