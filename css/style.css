@@ -126,6 +126,10 @@ h6 {
 
 /* intro styles */
 
+#intro{
+	position: absolute;
+}
+
 .logo img {
 	width: 100px;
 	border-radius: 100%;
@@ -139,14 +143,6 @@ h6 {
 	/*border: 1px solid #000;	*/
 }
 
-#intro {
-	/*background-color: #fff;*/
-	background-image: url("../img/coffee-beans.png");
-	background-repeat: repeat-x;
-	background-color: rgba(247,194,130,0.5);
-	background-position: left bottom;
-	position: relative;
-}
 
 #about {
 	background-color: rgba(185, 188, 189, 0.2);
@@ -170,7 +166,10 @@ h6 {
 	opacity: 0.8;
 }
 
+.bg{
+	position: relative;
 
+}
 /*#iw{
 	background: -webkit-linear-gradient(#d9ad7c, #4040a1);
 	background: -o-linear-gradient(#d9ad7c, #4040a1); 

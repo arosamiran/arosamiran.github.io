@@ -1,15 +1,24 @@
-window.onload = init;
-var position = [], counter = 0;
+window.onload = initPage;
+var position = [],
+	counter = 0;
 
+function initPage() {
+	let intro = document.getElementById("intro");
+	let bg = document.querySelector(".bg");
+	bg.style.height = intro.clientHeight + 'px';
+	intro.style.background = "rgba(247,194,130,0.5) url(img/coffee-beans-d.png) repeat-x left bottom";
+	intro.style.filter = "blur(3px)";
+	console.log(intro);
+}
 
 function init() {
-	
+
 	menuHandler = document.getElementById('menu');
 	menuHandler.style.position = "fixed";
 	menuHandler.style.top = "5px";
 	menuHandler.style.marginLeft = "5px";
 	// console.log(menuHandler);
-	
+
 	// menuHandler.className += " menu-right";
 	// menuHandler.className += "menu-right";
 	iHolder = document.getElementById('intro');
@@ -34,15 +43,15 @@ function init() {
 	var screenWidth = screen.width;
 
 	var dividerHandler = [document.getElementById('iw'), document.getElementById('wa'), document.getElementById('cl')];
-	
+
 
 	if (screenHeight <= 700) {
 		// screenHeight = screenWidth;
 		mobile(wrapper, screenHeight, screenWidth, introHeight, worksHeight, linksHeight);
-	} else{
+	} else {
 		desktop(wrapper, screenHeight, screenWidth);
 		// menuHandler.style.display = "none";
-		
+
 		for (var i = 0; i < dividerHandler.length; i++) {
 			dividerHandler[i].style.display = "none";
 		}
@@ -66,48 +75,48 @@ function mobile(w, sh, sw, ih, wh, lh) {
 
 	for (var i = 0; i <= w.length - 1; i++) {
 		if (sh <= 750) {
-			switch(i){
-			case 0:
-				position.push(0 + "px");
-				w[0].style.height = ih + "px";
-			break;
-			case 1:
-				position.push(ih + "px");
-				w[1].style.height = wh + "px";
-			break;
-			case 2:
-				position.push(wh + "px");
-				w[2].style.height = sh + "px";
-			break;
-			case 4:
-				position.push(sh + "px");
-				w[4].style.height = sh + "px";
-			break;
-			default:
-				window.alert("Height definition is incorrect");
-			break;
+			switch (i) {
+				case 0:
+					position.push(0 + "px");
+					w[0].style.height = ih + "px";
+					break;
+				case 1:
+					position.push(ih + "px");
+					w[1].style.height = wh + "px";
+					break;
+				case 2:
+					position.push(wh + "px");
+					w[2].style.height = sh + "px";
+					break;
+				case 4:
+					position.push(sh + "px");
+					w[4].style.height = sh + "px";
+					break;
+				default:
+					window.alert("Height definition is incorrect");
+					break;
 			}
 		} else {
-			switch(i){
-			case 0:
-				position.push(0 + "px");
-				w[0].style.height = ih + "px";
-			break;
-			case 1:
-				position.push(ih + "px");
-				w[1].style.height = sh + "px";
-			break;
-			case 2:
-				position.push(wh + "px");
-				w[2].style.height = sh + "px";
-			break;
-			case 3:
-				position.push(sh + "px");
-				w[3].style.height = sh + "px";
-			break;
-			default:
-				window.alert("Height definition is incorrect");
-			break;
+			switch (i) {
+				case 0:
+					position.push(0 + "px");
+					w[0].style.height = ih + "px";
+					break;
+				case 1:
+					position.push(ih + "px");
+					w[1].style.height = sh + "px";
+					break;
+				case 2:
+					position.push(wh + "px");
+					w[2].style.height = sh + "px";
+					break;
+				case 3:
+					position.push(sh + "px");
+					w[3].style.height = sh + "px";
+					break;
+				default:
+					window.alert("Height definition is incorrect");
+					break;
 			}
 		}
 	}
