@@ -26,6 +26,9 @@ body{
 	font-family: text, sans-serif;
 	font-size: 100%;
 	box-sizing: border-box;
+	display: flex;
+	align-items: stretch;
+
 }
 
 *{
@@ -41,6 +44,18 @@ blockquote{
 	text-align: center;
 	font-weight: lighter;
 	color: rgb(68, 51, 29);
+}
+
+.flex{
+	margin: auto;	
+}
+
+.transbox-white{
+background-color: rgba(255,255,255,0.7);
+}
+
+.center{
+	text-align: center;
 }
 
 .date{

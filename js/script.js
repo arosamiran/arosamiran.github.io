@@ -70,7 +70,7 @@ function mobile(w, sh, sw, ih, wh, lh) {
 					w[1].style.height = sh + "px";
 					break;
 				case 2:
-					position.push(wh + "px");
+					position.push(sh + "px");
 					w[2].style.height = sh + "px";
 					break;
 				case 3:
