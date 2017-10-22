@@ -11,5 +11,5 @@ xmlhttp.onreadystatechange = function () {
     document.getElementById("demo").innerHTML = this.responseText;
   }
 };
-xmlhttp.open("GET", "../shared/intro.html", true);
+xmlhttp.open("GET", "shared/intro.html", true);
 xmlhttp.send();

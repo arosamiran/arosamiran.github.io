@@ -1,4 +1,4 @@
-/* custom fonts */
+/* CUSTOM FONTS */
 
 @font-face {
 	font-family: 'heading';
@@ -15,16 +15,11 @@
 }
 
 
-/* global styles */
-
+/* GLOBAL STYLES */
 html,
 body {
 	margin: 0px;
 	height: 100%;
-}
-
-a {
-	text-decoration: none;
 }
 
 * {
@@ -40,47 +35,28 @@ h6 {
 	font-family: heading, sans-serif;
 }
 
-
-/*
-.menu-right{
-	top: 5px;
-	left: 5px;
-}
-*/
-
-.hide {
-	display: none;
+a{
+	text-decoration: none;
 }
 
-.show {
-	display: all;
+p {
+	font-family: text, sans-serif;
+	font-size: 1.25em;
+	font-weight: lighter;
+	text-decoration: none;
 }
 
-.container {
-	position: fixed;
-	/*display: inline-block;*/
-	cursor: pointer;
-	background-color: transparent;
-	top: 20px;
-	left: 20px;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-	width: 35px;
-	height: 5px;
-	background-color: #818181;
-	margin: 6px 0;
-	transition: 0.5s;
+.transbox{
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 20px;
 }
 
 .header {
 	font-size: 2em;
-	/*text-decoration: none;*/
 	font-family: heading, sans-serif;
-	font-weight: lighter;
 	padding: 20px;
+	text-align: center;
+	color: #fff;
 }
 
 .heading-holder {
@@ -96,12 +72,12 @@ h6 {
 	font-family: heading, sans-serif;
 }
 
-.text {
-	/*font-family: "Microsoft Yi Baiti", sans-serif;*/
-	font-family: text, sans-serif;
-	font-size: 1.25em;
-	font-weight: lighter;
-	text-decoration: none;
+.wrapper {
+	background-color : rgba(247,194,130,0.2);
+	background-repeat: repeat-x;
+	padding: 20px;
+	display: flex;
+	align-items: stretch;
 }
 
 .flex {
@@ -127,7 +103,8 @@ h6 {
 /* intro styles */
 
 #intro{
-	position: absolute;
+	background-image: url("../img/coffee-beans.png");
+	background-position: left bottom;
 }
 
 .logo img {
@@ -145,20 +122,13 @@ h6 {
 
 
 #about {
-	background-color: rgba(185, 188, 189, 0.2);
-	padding: 10px;
 	margin-bottom: 20px;
 }
 
-.wrapper {
-	padding: 20px;
-	display: flex;
-	align-items: stretch;
-}
 
-.intro .text {
+.intro p {
 	margin: 30px;
-	color: #000;
+	color: ;
 }
 
 .intro .links {
@@ -166,104 +136,51 @@ h6 {
 	opacity: 0.8;
 }
 
-.bg{
-	position: relative;
-
-}
-/*#iw{
-	background: -webkit-linear-gradient(#d9ad7c, #4040a1);
-	background: -o-linear-gradient(#d9ad7c, #4040a1); 
-	background: -moz-linear-gradient(#d9ad7c, #4040a1);
-	background: linear-gradient(#d9ad7c, #4040a1);
-}*/
+/* WORKS STYLE */
 
 #works {
-	background-color: #4040a1;
 	background-image: url("../img/coffee-beans-i.png");
-	background-repeat: repeat-x;
-	/*	display: flex;
-	align-items: stretch;*/
+	background-position: left top;
 }
+
 
 .works [class*="work-"] {
-	/*border: 1px #aaa dotted;*/
-	background-color: rgba(185, 188, 189, 0.5);
 	margin-bottom: 5px;
-	padding: 20px;
-	height: 200px;
-	/*height: 20%;*/
-}
-
-.works .header {
-	background-color: transparent;
-	color: #deeaee;
-	display: block;
-	text-align: center;
 }
 
 .works .title {
 	color: #000;
-	opacity: 1;
-	/*position: absolute;*/
-	/*text-decoration: none;*/
+	opacity: 0.7;
 }
 
-.works .text {
+.works p {
 	color: #000;
 	margin: 20px;
-	/*position: absolute;*/
 	opacity: 1;
 }
 
+/* CONTACT STYLES */
+
 #contact {
-	background-color: #fff;
 	background-image: url("../img/coffee-beans.png");
-	background-repeat: repeat-x;
 	background-position: left bottom;
-	/*	display: flex;
-	align-items: stretch;*/
 }
 
-.contact .tweet {
-	color: #fff;
+
+.contact p {
 	text-align: center;
 }
 
 .contact .header {
-	color: #fff;
-	background-color: rgba(48, 31, 9, 0.6);
-	padding: 20px;
+	color: rgba(48, 31, 9, 1);
 }
-
-.contact .text {
-	color: #fff;
-	margin: 20px;
-}
-
-
-/*.contact .twitter-share-button{
-	color: #fff;
-	opacity: 0.8;
-	transform: all, 0.2s;
-}*/
 
 .contact .twitter-share-button:hover {
 	color: #55ACEE;
 	opacity: 1;
 }
 
-
-/*#cl{
-	background: -webkit-linear-gradient(#fff, #3b3a30);
-	background: -o-linear-gradient(#fff, #3b3a30);
-	background: -moz-linear-gradient(#fff, #3b3a30);
-	background: linear-gradient(#fff, #3b3a30);
-}*/
-
 #links {
-	background-color: #3b3a30;
-	/*	display: flex;
-	align-items: stretch;*/
 	background-image: url("../img/coffee-beans-i.png");
 	background-repeat: repeat-x;
 }
@@ -271,38 +188,26 @@ h6 {
 .links .header {
 	color: #ECF0F1;
 	text-align: center;
-	/*border: 1px #aaa dotted;*/
-	display: block;
-}
-
-.links .text {
-	color: #ECF0F1;
-	/*column-count: 3;*/
-	opacity: 1;
 }
 
 .link-holder [class*="link-"] {
 	background-color: rgba(0, 0, 0, 0.5);
-	/*float: left;*/
 	padding: 20px;
 	width: 100%;
-	/*border: 1px #fff dotted;*/
 	text-align: center;
 }
 
 .links .link-holder {
 	column-gap: 5px;
 	column-count: 2;
-	-webkit-column-count: 2;
-	/* Chrome, Safari, Opera */
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	-moz-column-count: 2/* Firefox */
 }
 
 .links a {
-	/*column-count: 3;
-	column-fill: balance;*/
-	/*border: 1px solid #fff;*/
 	display: inline-block;
+	font-family: text, sans-serif;
+	color: #fff;
 }
 
 .link-holder .filler {
@@ -310,8 +215,6 @@ h6 {
 }
 
 .link-holder div {
-	/*display: inline-block;*/
-	/*border: 1px dotted #aaa;*/
 	margin-bottom: 5px;
 }
 
@@ -320,7 +223,7 @@ h6 {
 		margin: auto;
 	}
 
-	.works .text{
+	.works p{
 		margin: auto;
 	}*/
 	#wc {
@@ -342,7 +245,7 @@ h6 {
 }
 
 @media screen and (min-width: 720px) {
-	.text {
+	p {
 		font-size: 1.35em;
 	}
 	#works .holder {
