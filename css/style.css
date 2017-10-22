@@ -248,12 +248,7 @@ p {
 	p {
 		font-size: 1.35em;
 	}
-	#works .holder {
-		/*border: 1px dotted #aaa;*/
-		column-count: 2;
-		column-gap: 5px;
-		column-fill: balance;
-	}
+
 	#works .title {
 		font-size: 1.6em;
 	}
@@ -302,9 +297,6 @@ p {
 		background-position: left bottom;
 		background-repeat: repeat-x;
 	}
-	#intro .flex {
-		border: 1px dotted blue;
-	}
 	#works {
 		background-image: url('../img/background.jpg');
 	}
@@ -312,12 +304,11 @@ p {
 	.works .title {
 		color: #50394c;
 	}
-	#wc {
-		display: none;
-	}
 	#links {
 		background-image: url('../img/fireworks.jpg');
 	}
+
+
 	#contact {
 		background-image: url('../img/portrait.jpg');
 	}

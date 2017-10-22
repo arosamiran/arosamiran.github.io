@@ -40,7 +40,7 @@ blockquote{
 	font-size: 1.3em;
 	text-align: center;
 	font-weight: lighter;
-	color: #fff;
+	color: rgb(68, 51, 29);
 }
 
 .date{
@@ -93,18 +93,13 @@ img{
 .link{
 	text-decoration: none;
 	opacity: 0.8;
-	transform: opacity, 0.2s;
-	color:  #deeaee;
-	border-bottom: 1px  #deeaee dotted;
+	color: rgb(68, 51, 29);
 }
 
 .link:hover{
+	border-bottom: 1px  rgb(68, 51, 29) dotted;
 	opacity: 1;	
 }
-
-/*.link:hover{
-	opacity: 0.8;
-}*/
 
 .thumbnail{
 	width: 100%;

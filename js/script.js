@@ -1,32 +1,14 @@
-window.onload = initPage;
+window.onload = init;
 var position = [],
 	counter = 0;
 
-function initPage() {
-	let intro = document.getElementById("intro");
-	let bg = document.querySelector(".bg");
-	bg.style.height = intro.clientHeight + 'px';
-	intro.style.background = "rgba(247,194,130,0.5) url(img/coffee-beans-d.png) repeat-x left bottom";
-	intro.style.filter = "blur(3px)";
-	console.log(intro);
-}
 
 function init() {
 
-	menuHandler = document.getElementById('menu');
-	menuHandler.style.position = "fixed";
-	menuHandler.style.top = "5px";
-	menuHandler.style.marginLeft = "5px";
-	// console.log(menuHandler);
-
-	// menuHandler.className += " menu-right";
-	// menuHandler.className += "menu-right";
 	iHolder = document.getElementById('intro');
 	wHolder = document.getElementById('works');
 	cHolder = document.getElementById('contact');
 	lHolder = document.getElementById('links');
-	// console.log(wHolder);
-
 
 	var introHeight = iHolder.clientHeight;
 	var worksHeight = wHolder.clientHeight;
@@ -40,7 +22,7 @@ function init() {
 	var screenHeight = screen.height;
 
 	// device's width
-	var screenWidth = screen.width;
+	// var screenWidth = screen.width;
 
 	var dividerHandler = [document.getElementById('iw'), document.getElementById('wa'), document.getElementById('cl')];
 
@@ -48,33 +30,14 @@ function init() {
 	if (screenHeight <= 700) {
 		// screenHeight = screenWidth;
 		mobile(wrapper, screenHeight, screenWidth, introHeight, worksHeight, linksHeight);
-	} else {
-		desktop(wrapper, screenHeight, screenWidth);
-		// menuHandler.style.display = "none";
-
-		for (var i = 0; i < dividerHandler.length; i++) {
-			dividerHandler[i].style.display = "none";
-		}
 	}
 }
 
-function desktop(w, sh, sw) {
-	for (var i = 0; i < w.length; i++) {
-		w[i].style.height = sh + "px";
-		w[i].style.width = sw + "px";
-	}
-}
 
 function mobile(w, sh, sw, ih, wh, lh) {
-	// console.log(sh.valueOf())
-	// var introHandler = document.getElementById("intro");
-	// introHandler.style.backgroundImage = "url(../images/coffee-beans.png)";
-	// console.log(introHandler);
-
-	// console.log(sh, sw);
-
 	for (var i = 0; i <= w.length - 1; i++) {
 		if (sh <= 750) {
+			console.log(ih);
 			switch (i) {
 				case 0:
 					position.push(0 + "px");
