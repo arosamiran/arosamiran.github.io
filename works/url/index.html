@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="Angelo Rosamiran">
   <title>URL-Shortening App</title>
 
   <link rel="stylesheet" type="text/css" href="../works.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <article class="transbox-white">
-    <div class="flex">
+  <article class="flex">
+    <div class="transbox-white">
 
       <h1 class="header center">Enter a URL</h1>
 
       <form id="form" autocomplete="off">
         <input type="text" id="input" value="">
-        <button id="shorten">Shorten</button>
-        <button id="expand">Expand</button>
+        <div class="btns">
+          <button id="shorten">Shorten</button>
+          <button id="expand">Expand</button>
+        </div>
       </form>
 
       <div id="responseField">
@@ -26,8 +30,9 @@
 
     </div>
   </article>
-<script src="script.js"></script>
+  <script src="script.js"></script>
   <!-- <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script> -->
   <!-- <script src="main.js"></script> -->
 </body>
+
 </html>
