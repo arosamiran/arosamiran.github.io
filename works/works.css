@@ -22,8 +22,6 @@ body {
 	font-family: text, sans-serif;
 	font-size: 100%;
 	box-sizing: border-box;
-	display: flex;
-	align-items: stretch;
 }
 
 * {
@@ -31,6 +29,8 @@ body {
 }
 
 article {
+	display: flex;
+	align-items: stretch;
 	padding: 20px;
 }
 

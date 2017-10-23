@@ -7,14 +7,15 @@
   <title>URL-Shortening App</title>
 
   <link rel="stylesheet" type="text/css" href="../works.css" />
+  <script src="back.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <article class="flex">
-    <div class="transbox-white">
+  <article>
+    <div class="flex">
 
-      <h1 class="header center">Enter a URL</h1>
+      <h1 class="text center">Enter a URL</h1>
 
       <form id="form" autocomplete="off">
         <input type="text" id="input" value="">
@@ -27,9 +28,13 @@
       <div id="responseField">
 
       </div>
-
     </div>
+    <div id="back" onclick="back()" class="back-btn">&lt;</div>
   </article>
+  <div id="logo">
+    <a href="arosamiran.me"><img src="../../img/doodlr.jpg" alt="doodlr"></a>
+  </div>
+  
   <script src="script.js"></script>
   <!-- <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script> -->
   <!-- <script src="main.js"></script> -->

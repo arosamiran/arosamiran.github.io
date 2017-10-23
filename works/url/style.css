@@ -3,6 +3,18 @@
   height: 40px;
   font-family: text, sans-serif;
   border: none;
+  text-align: center;
+}
+
+#logo{
+  width: 50px;
+  margin: 0px auto;
+  filter: opacity(0.8);
+}
+
+#logo img{
+  width: 100%;
+  border-radius: 100%;
 }
 
 button{
@@ -11,10 +23,15 @@ button{
   padding: 10px;
   text-align: center;
   font-family: text, sans-serif;
+  font-size: 1.15em;
 }
 
 .btns{
-  border: 1px black solid;
-  display: inline-block;
+  display: block;
   margin: auto;
+  text-align: center;
+}
+
+.text{
+  font-size: 2em;
 }

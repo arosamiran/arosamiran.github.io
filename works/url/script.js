@@ -1,3 +1,3 @@
-let flex = document.querySelector(".flex");
-flex.style.height = screen.height + "px";
-console.log(flex);
+let article = document.querySelector("article");
+article.style.height = screen.height + "px";
+console.log(article);
