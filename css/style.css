@@ -16,10 +16,10 @@
 
 
 /* GLOBAL STYLES */
+
 html,
 body {
 	margin: 0px;
-	height: 100%;
 }
 
 * {
@@ -35,7 +35,7 @@ h6 {
 	font-family: heading, sans-serif;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ p {
 	text-decoration: none;
 }
 
-.transbox{
+.transbox {
 	background-color: rgba(255, 255, 255, 0.7);
 	padding: 20px;
 }
@@ -73,7 +73,7 @@ p {
 }
 
 .wrapper {
-	background-color : rgba(247,194,130,0.2);
+	background-color: rgba(247, 194, 130, 0.2);
 	background-repeat: repeat-x;
 	padding: 20px;
 	display: flex;
@@ -82,13 +82,6 @@ p {
 
 .flex {
 	margin: auto;
-}
-
-.divider {
-	width: 100%;
-	height: 100px;
-	/*border: 1px #aaa dotted;*/
-	/*background-color: #572E1B;*/
 }
 
 .date {
@@ -101,7 +94,7 @@ p {
 
 /* intro styles */
 
-#intro{
+#intro {
 	background-image: url("../img/coffee-beans.png");
 	background-position: left bottom;
 }
@@ -109,7 +102,6 @@ p {
 .logo img {
 	width: 100px;
 	border-radius: 100%;
-	/*border: 1px #aaa dotted;*/
 }
 
 .logo {
@@ -119,15 +111,12 @@ p {
 	/*border: 1px solid #000;	*/
 }
 
-
 #about {
 	margin-bottom: 20px;
 }
 
-
 .intro p {
 	margin: 30px;
-	color: ;
 }
 
 .intro .links {
@@ -135,13 +124,13 @@ p {
 	opacity: 0.8;
 }
 
+
 /* WORKS STYLE */
 
 #works {
 	background-image: url("../img/coffee-beans-i.png");
 	background-position: left top;
 }
-
 
 .works [class*="work-"] {
 	margin-bottom: 5px;
@@ -158,6 +147,7 @@ p {
 	opacity: 1;
 }
 
+
 /* CONTACT STYLES */
 
 #contact {
@@ -165,13 +155,12 @@ p {
 	background-position: left bottom;
 }
 
+#contact h1 {
+	color: rgba(48, 31, 9, 1);
+}
 
 .contact p {
 	text-align: center;
-}
-
-.contact .header {
-	color: rgba(48, 31, 9, 1);
 }
 
 .contact .twitter-share-button:hover {
@@ -199,7 +188,8 @@ p {
 .links .link-holder {
 	column-gap: 5px;
 	column-count: 2;
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-webkit-column-count: 2;
+	/* Chrome, Safari, Opera */
 	-moz-column-count: 2/* Firefox */
 }
 
@@ -247,7 +237,6 @@ p {
 	p {
 		font-size: 1.35em;
 	}
-
 	#works .title {
 		font-size: 1.6em;
 	}
@@ -303,18 +292,20 @@ p {
 	.works .title {
 		color: #50394c;
 	}
+	.contact .header {
+		background-color: transparent;
+	}
+	#contact {
+		background-position: top left;
+		background-image: url('../img/portrait.jpg');
+	}
 	#links {
 		background-image: url('../img/fireworks.jpg');
 	}
-
-
-	#contact {
-		background-image: url('../img/portrait.jpg');
+	#links a {
+		font-size: 1.3em;
 	}
 	.footer {
 		background-color: #070B0C;
-	}
-	.contact .header {
-		background-color: transparent;
 	}
 }

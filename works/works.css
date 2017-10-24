@@ -29,8 +29,6 @@ body {
 }
 
 article {
-	display: flex;
-	align-items: stretch;
 	padding: 20px;
 }
 
@@ -41,9 +39,7 @@ blockquote {
 	color: rgb(68, 51, 29);
 }
 
-.flex {
-	margin: auto;
-}
+
 
 .transbox-white {
 	background-color: rgba(255, 255, 255, 0.7);

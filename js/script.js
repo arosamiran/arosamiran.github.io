@@ -1,146 +1,18 @@
-window.onload = init;
-var position = [],
-	counter = 0;
+window.onload = setHeight;
 
-
-function init() {
-
-	iHolder = document.getElementById('intro');
-	wHolder = document.getElementById('works');
-	cHolder = document.getElementById('contact');
-	lHolder = document.getElementById('links');
-
-	var introHeight = iHolder.clientHeight;
-	var worksHeight = wHolder.clientHeight;
-	var contactHeight = cHolder.clientHeight;
-	var linksHeight = lHolder.clientHeight;
-	// wrapper Array
-	var wrapper = [iHolder, wHolder, cHolder, lHolder];
-	// console.log(introHeight);
-
-	// device's height
-	var screenHeight = screen.height;
-
-	// device's width
-	// var screenWidth = screen.width;
-
-	var dividerHandler = [document.getElementById('iw'), document.getElementById('wa'), document.getElementById('cl')];
-
-
-	if (screenHeight <= 700) {
-		// screenHeight = screenWidth;
-		mobile(wrapper, screenHeight, screenWidth, introHeight, worksHeight, linksHeight);
-	}
-}
-
-
-function mobile(w, sh, sw, ih, wh, lh) {
-	for (var i = 0; i <= w.length - 1; i++) {
-		if (sh <= 750) {
-			console.log(ih);
-			switch (i) {
-				case 0:
-					position.push(0 + "px");
-					w[0].style.height = ih + "px";
-					break;
-				case 1:
-					position.push(ih + "px");
-					w[1].style.height = wh + "px";
-					break;
-				case 2:
-					position.push(wh + "px");
-					w[2].style.height = sh + "px";
-					break;
-				case 4:
-					position.push(sh + "px");
-					w[4].style.height = sh + "px";
-					break;
-				default:
-					window.alert("Height definition is incorrect");
-					break;
-			}
-		} else {
-			switch (i) {
-				case 0:
-					position.push(0 + "px");
-					w[0].style.height = ih + "px";
-					break;
-				case 1:
-					position.push(ih + "px");
-					w[1].style.height = sh + "px";
-					break;
-				case 2:
-					position.push(sh + "px");
-					w[2].style.height = sh + "px";
-					break;
-				case 3:
-					position.push(sh + "px");
-					w[3].style.height = sh + "px";
-					break;
-				default:
-					window.alert("Height definition is incorrect");
-					break;
-			}
+function setHeight() {
+	let articles = document.getElementsByTagName('article');
+	for (var i = 0; i < articles.length; i++) {
+		let sections = document.getElementsByTagName('section');
+		if (screen.height > 720) {
+			sections[i].style.height = screen.height + "px";
+			sections[1].style.height = articles[1].clientHeight + "px";
+		}else{
+			sections[0].style.height = articles[0].clientHeight + "px";
+			sections[1].style.height = articles[1].clientHeight + "px";
+			sections[i].style.height = screen.height + "px";
 		}
+		console.log(sections[i]);
+		
 	}
-	// console.log(document.getElementById('contact').clientHeight);
-	// console.log("Positions: " + position.valueOf());
-	// var newW = w + "px";
-	setPosition(w, sh, position);
-}
-
-function setPosition(w, sh, pos) {
-	// console.log(pos.valueOf());
-	// var introHeight = w[0].valueOf().clientHeight + "px";
-	// console.log(introHeight);
-	for (var i = 0; i < w.length; i++) {
-		w[i].style.top = pos[i].valueOf() + "px";
-
-		// console.log(w[i].valueOf());
-	}
-}
-
-function menuClick(x) {
-	if (counter == 0) {
-		openNav(x);
-		// Disable all links
-		// var linksHandler = document.getElementsByClassName('link');
-		// linksHandler.style.
-	} else {
-		closeNav();
-	}
-	// console.log();
-}
-
-/* Set the width of the side navigation to 250px */
-function openNav(x) {
-	outHandler = document.getElementById('outsidenav');
-	var screenWidth = screen.width;
-	counter++;
-	document.getElementById("mySidenav").style.width = "250px";
-	x.classList.toggle("change");
-	outHandler.style.display = "block";
-	outHandler.style.width = (screenWidth - 250) + "px";
-	// x.className += " moved";
-	// var barHandler = document.getElementsByClassName('bar2');
-	// console.log(document.getElementById('counter'));
-	// if (evt.clientX < 0) {
-	// 	x.className += "";
-	// } else {
-	// 	x.className += " change";
-	// }
-	// x.classList.toggle("moved");
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav(num) {
-	menuHandler.className -= "container change";
-	outHandler.style.display = "none";
-	outHandler.style.width = "0px";
-	i = num;
-	counter--;
-	menuHandler.className = "container";
-	document.getElementById("mySidenav").style.width = "0px";
-	// console.log(position[i].valueOf());
-	// scroll(i, num);
 }
