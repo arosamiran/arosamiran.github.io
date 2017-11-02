@@ -60,3 +60,4 @@ function shorten() {
 
 $expandButton.click(expand);
 $shortenButton.click(shorten);
+
