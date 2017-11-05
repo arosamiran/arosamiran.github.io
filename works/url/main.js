@@ -16,7 +16,7 @@ async function expandUrl(){
   let response = await fetch(urlToExpand);
   if (response.ok) {
     let jsonResponse = await response.json();
-    console.log(jsonResponse);
+    $responseField.append(jsonResponse.longUrl);
   }
   throw new Error('Request failed!');
 
@@ -35,7 +35,7 @@ async function shortenUrl() {
     });
     if (response.ok) {
       let jsonResponse = await response.json();
-      console.log(jsonResponse);
+      $responseField.append(jsonResponse.id);
     }
 
     throw new Error('Request failed!');
