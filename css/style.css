@@ -289,7 +289,6 @@ p {
 		background-size: cover;
 	}
 	#intro {
-		border: 1px dotted green;
 		background-image: url("../img/coffee-beans-d.png");
 		background-position: left bottom;
 		background-repeat: repeat-x;
