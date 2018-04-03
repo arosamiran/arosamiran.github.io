@@ -1,28 +1,60 @@
-.App {
-  text-align: center;
+body {
+  background-image: url(img/back-m.jpg);
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@font-face {
+  font-family: 'geosanslightregular';
+  src: url('fonts/geosanslight-webfont.woff2') format('woff2'),
+       url('fonts/geosanslight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: geosanslightregular, sans-serif;
+  color: whitesmoke;
   padding: 20px;
+}
+
+h1{
+  font-size: 3em;
+}
+
+.header {
+  border: 1px solid cadetblue;
+}
+
+.header div {
+  display: inline-block;
+}
+
+.logo {
+  border: 1px solid whitesmoke;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+  ;
+}
+
+.intro p {
   color: white;
+  font-family: Amaranth, sans-serif;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 5px;
+  padding: 20px;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.links div {
+  display: inline-block;
+  padding: 5px;
 }
