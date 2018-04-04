@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="js flexbox canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__dev_twitter_com" style="" lang="en"><!--<![endif]--><head prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tweet Button — Twitter Developers</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="https://ton.twimg.com/dtc/a7d9cc62-85d4-47c5-9b72-217d67193c42/_static/favicon.ico">
+  
+
+  <meta name="google-site-verification" content="DsylEvTL7j64tY0IHBWbMN6pUvvKMIRl8usLs1sn2XQ">
+
+  
+  <meta name="twitter:card" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:widgets:csp" content="on">
+
+  <meta property="og:title" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:type" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+
+  <link rel="canonical" href="">
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/theme.css" type="text/css">
+  
+
+  
+    <link rel="stylesheet" href="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/light.css" type="text/css">
+    <link rel="stylesheet" href="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/roman.css" type="text/css">
+    <link rel="stylesheet" href="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/bold.css" type="text/css">
+    <link rel="stylesheet" href="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/heavy.css" type="text/css">
+  
+
+  
+  
+    
+  
+    <link rel="top" title="Twitter Developers" href="https://dev.twitter.com/index">
+        <link rel="up" title="Twitter for Websites" href="https://dev.twitter.com/web/overview">
+        <link rel="next" title="Tweet Web Intent" href="https://dev.twitter.com/web/tweet-button/web-intent">
+        <link rel="prev" title="Moment oEmbed API" href="https://dev.twitter.com/web/embedded-moments/oembed"> 
+
+  
+  <link rel="dns-prefetch" href="https://platform.twitter.com/">
+
+  
+  <script async="" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/analytics.js"></script><script src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/modernizr.js"></script>
+
+<script type="text/javascript" charset="utf-8" async="" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/button.js"></script></head>
+
+<body role="document" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+
+  <div class="comp-wrapper nav-drawer-dtc no-interaction nav-exposed transparent">
+    <div class="comp-container container">
+      <div class="nav-wrapper">
+        <header>
+          <div class="header-left">
+            <div class="nav-drawer-link">
+              <div class="property-title">
+                <a href="https://dev.twitter.com/index" class="logo-and-title">
+                  <span class="logo">
+                     <i class="icon-logo_sml" aria-hidden="true"></i>
+                    <span class="screen-reader">Twitter logo icon</span>
+                  </span>
+                  <span class="title">Developers</span>
+                </a>
+              </div>
+              <!-- <div class="arrow-down">
+                <i class="icon-navigation_down_arrow" aria-hidden="true"></i>
+                <span class="screen-reader">Arrow down icon</span>
+              </div> -->
+            </div>
+          </div>
+
+          <ul class="nav-exposed__menu">
+              <li class="nav-main__list-item">
+                <a href="https://dev.twitter.com/products" title="Products">Products</a>
+              </li>
+              <li class="nav-main__list-item">
+                <a href="https://dev.twitter.com/docs" title="Documentation">Documentation</a>
+              </li>
+              <li class="nav-main__list-item">
+                <a href="https://dev.twitter.com/community" title="Community">Community</a>
+              </li>
+              <li class="nav-main__list-item">
+                <a href="https://dev.twitter.com/build" title="Build">Build</a>
+              </li>
+              <li class="nav-main__list-item">
+                <a href="https://apps.twitter.com/" title="My Apps" target="_blank">My apps</a>
+              </li>
+              <li class="nav-main__list-item nav-cta">
+                <a href="https://dev.twitter.com/resources/signup" title="Join"><button>Join</button></a>
+              </li>
+          </ul>
+
+          <div class="header-right">
+            <a class="nav-icon" href="#"><span></span></a>
+            <a class="nav-cta" href="https://dev.twitter.com/resources/signup" title="Join"><button>Join</button></a>
+          </div>
+        </header>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Masthead -->
+  <div class="comp-wrapper masthead slim blue-gradient">
+    <div class="comp-container container">
+      <div class="copy-wrapper">
+        <div class="copy-container">
+          <h2>Twitter Developer Documentation</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Masthead -->
+
+  
+
+
+
+
+
+<div class="container">
+  <div role="navigation" aria-label="breadcrumbs navigation">
+    <ol class="breadcrumb">
+      <li><a href="https://dev.twitter.com/docs">Docs</a></li>
+        
+          <li><a href="https://dev.twitter.com/web/overview">Twitter for Websites</a></li>
+        
+      
+      <li>Tweet Button</li>
+      
+    </ol>
+  </div>
+</div>
+  <div class="bg-outer">
+    <div class="container">
+      
+      <div class="row row-offcanvas row-offcanvas-left">
+
+        <div id="sidebar-nav" class="col-xs-6 col-sm-3 sidebar-offcanvas">
+              
+<!--<div role="search">
+  <p class="caption"><span class="caption-text">Search</span></p>
+  <form id="rtd-search-form" action="../search" method="get">
+    <label class="search_cont">
+      <input type="text" name="q" placeholder="Search for..." />
+      <i class="icon-navigation_search"></i>
+    </label>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>-->
+              
+                
+                
+                    <p class="caption"><span class="caption-text">Products &amp; Services</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/basics">Best practices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/overview/api">API overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="https://dev.twitter.com/web/overview">Twitter for Websites</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/embedded-tweets">Embedded Tweets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/embedded-timelines">Timelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/embedded-moments">Moments</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Tweet button</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://dev.twitter.com/web/tweet-button/web-intent">Web Intent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://dev.twitter.com/web/tweet-button/javascript-create">JavaScript Factory Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://dev.twitter.com/web/tweet-button/hashtag-button">Hashtag Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://dev.twitter.com/web/tweet-button/mention-button">Mention Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://dev.twitter.com/web/tweet-button/parameters">Parameter Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://dev.twitter.com/web/tweet-button/faq">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/follow-button">Follow button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/message-button">Direct Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/sign-in">Log in with Twitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/embedded-video">Embedded video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/periscope">Periscope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/intents">Web Intents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/javascript">JavaScript API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://dev.twitter.com/web/wordpress">WordPress Plugin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/twitterkit/overview">Twitter Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/cards/overview">Cards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/oauth">OAuth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/rest/public">REST APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/streaming/overview">Streaming APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/webhooks">Webhook APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/ads">Ads API</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://support.gnip.com/apis/">Gnip</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://www.mopub.com/resources/docs/">MoPub</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools &amp; Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://apps.twitter.com/">My apps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/rest/tools/console">API console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/overview/status">API status</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Translations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/ja">日本語</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/pt">Português, Brasil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/es">Español</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/fr">Français</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/resources/twitter-libraries">Libraries</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://twitterdev.github.io/">Sample code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/resources/playbooks">Playbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/resources/case-studies">Case studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/resources/signup">Join the community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/resources/events">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://dev.twitter.com/overview/terms">Developer terms</a></li>
+</ul>
+
+                
+              
+        </div>
+
+        <div id="main" class="col-xs-12 col-sm-9">
+
+          <p class="visible-xs">
+            <button id="nav-toggle" type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Show navigation »</button>
+          </p>
+
+          
+          <div class="container-fluid">
+            <div id="main-content" class="rst-content">
+              <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+               <div itemprop="articleBody">
+                
+  <div class="section" id="tweet-button">
+<h1>Tweet Button<a class="headerlink" href="#tweet-button" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound" id="id1">
+</div>
+<p>The Tweet button is a small button displayed on your website to help 
+viewers easily share your content on Twitter. A Tweet Button consists of
+ two parts: a <a class="reference external" href="https://dev.twitter.com/web/tweet-button/web-intent">link to the Tweet composer on Twitter.com</a> and Twitter for Websites JavaScript to enhance the link with the easily recognizable Tweet button.</p>
+<p>The <a class="reference external" href="https://publish.twitter.com/">publish.twitter.com</a>
+ website provides a simple, form-based approach to generate HTML markup 
+for a Tweet button you may copy-and-paste into your website template.</p>
+<p>Do you develop an iOS or Android application? Add a Tweet composer to your application using Twitter Kit for <a class="reference external" href="https://dev.twitter.com/twitterkit/ios/compose-tweets.html">iOS</a> or <a class="reference external" href="https://dev.twitter.com/twitterkit/android/compose-tweets.html">Android</a>.</p>
+<div class="section" id="tweet-creation-flow">
+<h2>Tweet creation flow<a class="headerlink" href="#tweet-creation-flow" title="Permalink to this headline">¶</a></h2>
+<div><iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/tweet_button.html" data-url="https://example.com/foo" frameborder="0"></iframe></div></div><p>Selecting
+ the Tweet button will pop open a new child window with a Tweet composer
+ pre-populated with the values you define in button markup or extracted 
+from the page.</p>
+<div><p><img alt="Screenshot of a Twitter composer pre-populated with web intent values" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/tweet-intent-composer_0.png"></p>
+</div><p>Twitter may suggest accounts to follow after the author has 
+successfully posted a Tweet. These displayed accounts are influenced by 
+the <code class="docutils literal"><span class="pre">via</span></code> and <code class="docutils literal"><span class="pre">related</span></code> web intent parameters.</p>
+<div><p><img alt="Screenshot of a Tweet web intent confirmation page with related account follow suggestions" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/tweet-intent-posted.png"></p>
+</div><p>A <a class="reference external" href="https://dev.twitter.com/web/javascript/events">tweet event</a> is triggered on your webpage when the Tweet button is tapped or clicked.</p>
+</div>
+<div class="section" id="how-to-add-a-tweet-button-to-your-website">
+<h2>How to add a Tweet button to your website<a class="headerlink" href="#how-to-add-a-tweet-button-to-your-website" title="Permalink to this headline">¶</a></h2>
+<p><strong>1.</strong> Create a new anchor element with a <code class="docutils literal"><span class="pre">twitter-share-button</span></code> class to allow the Twitter for Websites JavaScript to discover the element and enhance the link into a Tweet button. Set a <code class="docutils literal"><span class="pre">href</span></code> attribute value of <code class="docutils literal"><span class="pre">https://twitter.com/intent/tweet</span></code> to create a link to the Twitter web intent composer.</p>
+<div class="code html highlight-python"><div class="highlight"><pre><span></span>&lt;a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet"&gt;
+Tweet&lt;/a&gt;
+</pre></div>
+</div>
+<p><strong>2.</strong> Pre-populate Tweet text and suggest related accounts by customizing <a class="reference external" href="https://dev.twitter.com/web/tweet-button/web-intent">Tweet web intent</a> query parameters.</p>
+<div class="code html highlight-python"><div class="highlight"><pre><span></span>&lt;a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world"&gt;
+Tweet&lt;/a&gt;
+</pre></div>
+</div>
+<p><strong>3.</strong> Customize <a class="reference external" href="https://dev.twitter.com/web/tweet-button/parameters#button">Tweet button parameters</a> using data-* attributes.</p>
+<div class="code html highlight-python"><div class="highlight"><pre><span></span>&lt;a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world"
+  data-size="large"&gt;
+Tweet&lt;/a&gt;
+</pre></div>
+</div>
+<p><strong>4.</strong> Asynchronously <a class="reference external" href="https://dev.twitter.com/web/javascript/loading">load the Twitter for Websites JavaScript using our loading snippet</a>.
+ The JavaScript snippet will check for an existing version already on 
+the page, initialize a function queue to be executed once the widgets 
+JavaScript has loaded, and load the widgets JavaScript asynchronously 
+from Twitter’s CDN.</p>
+</div>
+<div class="section" id="tweet-text-components">
+<h2>Tweet text components<a class="headerlink" href="#tweet-text-components" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="text">
+<h3>text<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
+<p>A <code class="docutils literal"><span class="pre">text</span></code> parameter appears pre-selected in a Tweet composer. The Tweet author may easily remove the text with a single delete action.</p>
+<p>The <code class="docutils literal"><span class="pre">text</span></code> parameter may be auto-populated from the webpage’s <code class="docutils literal"><span class="pre">&lt;title&gt;</span></code> element if not explicitly set.</p>
+</div>
+<div class="section" id="url">
+<h3>url<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">url</span></code> parameter contains an absolute HTTP or HTTPS URL to be shared on Twitter. The shared URL will be <a class="reference external" href="https://support.twitter.com/articles/78124-how-to-post-shortened-links-urls">automatically shortened</a> in a published Tweet. A <a class="reference external" href="https://dev.twitter.com/cards/overview">Card</a> may appear for a shared URL.</p>
+<p>The <code class="docutils literal"><span class="pre">url</span></code> parameter may be auto-populated from a <a class="reference external" href="http://en.wikipedia.org/wiki/Canonical_link_element">canonical link element</a> (<code class="docutils literal"><span class="pre">&lt;link</span> <span class="pre">rel="canonical"&gt;</span></code>) or the <a class="reference external" href="https://html.spec.whatwg.org/multipage/browsers.html#the-location-interface">location.href</a> of the page when not explicitly set.</p>
+<div class="code html highlight-python"><div class="highlight"><pre><span></span>&lt;link rel="canonical"
+  href="/web/tweet-button"&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="hashtags">
+<h3>hashtags<a class="headerlink" href="#hashtags" title="Permalink to this headline">¶</a></h3>
+<p>Add a comma-separated list of <code class="docutils literal"><span class="pre">hashtags</span></code> to a Tweet using the <code class="docutils literal"><span class="pre">hashtags</span></code>
+ parameter. Omit a preceding “#” from each hashtag; the Tweet composer 
+will automatically add the proper space-separated hashtag by language.</p>
+</div>
+<div class="section" id="via">
+<h3>via<a class="headerlink" href="#via" title="Permalink to this headline">¶</a></h3>
+<p>Attribute the source of a Tweet to a Twitter username using the <code class="docutils literal"><span class="pre">via</span></code> parameter. The attribution will appear in a Tweet as ” via @username” translated into the language of the Tweet author.</p>
+<p>A <code class="docutils literal"><span class="pre">via</span></code> parameter may be auto-populated from a link or anchor element linked to a Twitter profile page with a <code class="docutils literal"><span class="pre">me</span></code> relationship token.</p>
+<div class="code html highlight-python"><div class="highlight"><pre><span></span>&lt;link rel="me"
+  href="https://twitter.com/twitterdev"
+&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="button-customization">
+<h2>Button customization<a class="headerlink" href="#button-customization" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="size">
+<h3>Size<a class="headerlink" href="#size" title="Permalink to this headline">¶</a></h3>
+<p>Add a <code class="docutils literal"><span class="pre">data-size</span></code> attribute value of <code class="docutils literal"><span class="pre">large</span></code> to display a larger Tweet button.</p>
+<p>Default</p>
+<div><iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/tweet_button_002.html" frameborder="0"></iframe></div><p>size=large</p>
+<div><iframe id="twitter-widget-2" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 74px; height: 28px;" title="Twitter Tweet Button" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/tweet_button_003.html" frameborder="0"></iframe></div></div>
+</div>
+</div>
+
+
+               </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  
+  <footer class="comp-wrapper nav-footer">
+      <div class="comp-container container">
+        <div class="row">
+          <div class="col-sm-2">
+            <dl>
+              <dt>Solutions</dt>
+              <dd><a href="https://dev.twitter.com/build" title="Build">Build</a></dd>
+              <dd><a href="https://dev.twitter.com/solutions/customer-service" title="Customer service">Customer service</a></dd>
+              <dd><a href="https://dev.twitter.com/solutions/tell-great-stories" title="Tell great stories">Tell great stories</a></dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Products</dt>
+              <dd><a href="https://dev.twitter.com/products/web" title="Publisher platform">Publisher platform</a></dd>
+              <dd><a href="https://dev.twitter.com/twitterkit/overview" title="Twitter Kit">Twitter Kit</a></dd>
+              <dd><a href="https://dev.twitter.com/rest/public" title="REST APIs">REST APIs</a></dd>
+              <dd><a href="https://dev.twitter.com/streaming/public" title="Streaming APIs">Streaming APIs</a></dd>
+              <dd><a href="https://dev.twitter.com/ads" title="Ads API">Ads API</a></dd>
+              <dd><a href="https://gnip.com/" title="Gnip" target="_blank">Gnip</a></dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Resources</dt>
+              <dd><a href="https://dev.twitter.com/docs" title="Documentation">Documentation</a></dd>
+              <dd><a href="https://twittercommunity.com/" title="Forums" target="_blank">Forums</a></dd>
+              <dd><a href="https://blog.twitter.com/developer" title="Blog" target="_blank">Blog</a></dd>
+              <dd><a href="https://dev.twitter.com/resources/case-studies" title="Case studies">Case studies</a></dd>
+              <dd><a href="https://dev.twitter.com/overview/terms" title="Developer terms">Developer terms</a></dd>
+              <dd><a href="https://support.twitter.com/forms/platform" title="Policy support" target="_blank">Policy support</a></dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Tools</dt>
+              <dd><a href="https://dev.twitter.com/overview/status" title="API status">API status</a></dd>
+              <dd><a href="https://dev.twitter.com/rest/tools/console" title="API console">API console</a></dd>
+              <dd><a href="https://cards-dev.twitter.com/validator" title="Cards validator" target="_blank">Cards validator</a></dd>
+              <dd><a href="https://apps.twitter.com/" title="Manage my apps" target="_blank">Manage my apps</a></dd>
+            </dl>
+          </div>
+          <div class="col-sm-2">
+            <dl>
+              <dt>Community</dt>
+              <dd><a href="https://dev.twitter.com/community/meetups" title="#TapIntoTwitter">#TapIntoTwitter</a></dd>
+              <dd><a href="https://partners.twitter.com/" title="Official partner" target="_blank">Official partner</a></dd>
+              <dd><a href="https://dev.twitter.com/events" title="Events">Events</a></dd>
+              <dd><a href="https://dev.twitter.com/flight/2015" title="Flight 2015">Flight 2015</a></dd>
+              <dd><a href="https://dev.twitter.com/flight/2014" title="Flight 2014">Flight 2014</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="comp-container container">
+          <div class="row">
+            <ul class="col-xs-6">
+              <div class="copyright">© 2017 Twitter, Inc.</div>
+              <li><a href="https://twitter.com/tos" title="Terms">Terms</a></li>
+              <li><a href="https://twitter.com/privacy" title="Privacy">Privacy</a></li>
+            </ul>
+            <ul class="text-right col-xs-6">
+              <li><a href="https://about.twitter.com/company" title="About">About</a></li>
+              <li><a href="https://careers.twitter.com/" title="Jobs">Jobs</a></li>
+              <li><a href="https://support.twitter.com/" title="Help">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/jquery.js"></script>
+    <!-- JavaScript -->
+  
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      $('[data-toggle="offcanvas"]').click(function () {
+          $('.row-offcanvas').toggleClass('active');
+      });
+
+      $('#nav-toggle').click(function () {
+          if ($('.row-offcanvas').hasClass('active')) {
+              $(this).html("&laquo; Hide Navigation");
+          } else {
+              $(this).html("Show Navigation &raquo;");
+          }
+      });
+      // Only set overflow-x: scroll on sections with tables
+      $('.section').has('table').css('overflow-x', 'scroll');
+    });
+
+  </script>
+  <script type="text/javascript" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/common.js"></script>
+
+  <script type="text/javascript" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/navigation.js"></script>
+
+  
+  
+    <script type="text/javascript" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/theme.js"></script>
+  
+
+  <script src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/vendor.js"></script>
+  <script src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/widgets.js" async=""></script>
+  <script src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/app.js"></script>
+  <script src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/google-analytics.js"></script> 
+
+
+<iframe scrolling="no" allowtransparency="true" src="Tweet%20Button%20%E2%80%94%20Twitter%20Developers_files/widget_iframe.html" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
