@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './doodlr.jpg';
+import  './materialize-v1.0.0-beta/css/materialize.css';
 import './App.css';
 
 class App extends Component {
@@ -21,62 +22,62 @@ class App extends Component {
               Through self-studying, I've learned how to program with JavaScript. Currently, I'm updating what I know about the language
             (It's a never-ending process) and VR experiences for the web (with A-Frame!).
             </p>
-            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Farosamiran.me&width=25px&layout=button_count&action=like&show_faces=true&share=false&height=21&appId"
-                width="75px" height="21" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
 
-         <div className="jay">
-         <h1><a href="#">Jay</a></h1>
-         <hr/>
+         <div className="jay " >
+         <h1 className="card-panel indigo light-panel-2"><a href="#" >Jay</a></h1>
                 <p className="text">A chatbot for notifying you what needs to be done. It can also tell you weathe forecasts on a place you specified.
                 </p>
                 <p className="text">It is currenty on beta stage that gets better the more you talk to it. Written in Javascript and uses the React.js library. It is open for contribution. <em>You may follow this <a classNameh="text" target="_blank" href="#">link</a> for the repo.</em></p>
          </div>
 
          <div className="url">
-          <h1><a href="#">URL-Shortening App</a></h1>
-          <hr/>
+          <h1 className="card-panel indigo light-panel-2"><a href="#">URL-Shortening App</a></h1>
             <p className="text">An app that shortens (or expands) URLs.</p>
          </div>
 
+         <div className="aframe">
+          <h1 className="card-panel indigo light-panel-2">A-Frame</h1>
+        </div>
+
          <div className="contact">
-         <h1>Contact</h1>
-          <p className="text">You may contact me by following the linkd belor. Or you may</p>
+         <h1 className="card-panel indigo light-panel-2">Contact</h1>
+          <p className="text">You may contact me by following the links below. Or you may</p>
           <p className="text">I'm open for freelance ptojects!</p>
          </div>
 
-      <div className="links">
+      <div className="links card-panel blue-grey darken-4">
         <h1>Links</h1>
-        <p className="text">You may fin me by following any of these links:</p>
+        <p className="text">You may find me by following any of these links:</p>
           <div>
-          <a className="text" target="_blank" href="www.facebook.com/arosamiran">Facebook</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="http://facebook.com/arosamiran">Facebook</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="www.twitter.com/arosamiran">Twitter</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="http://twitter.com/arosamiran">Twitter</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="http://instagram.com/arosamiran">Instagram</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="http://instagram.com/arosamiran">Instagram</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="https://linkedin.com/in/arosamiran">Linkedin</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="https://linkedin.com/in/arosamiran">Linkedin</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="https://plus.google.com/+AngeloRosamiran">Google+</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="https://plus.google.com/+AngeloRosamiran">Google+</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="http://arosamiran.tumblr.com/">Tumblr</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="http://arosamiran.tumblr.com/">Tumblr</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="http://doodlrph.wordpress.com/">Wordpress</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="http://doodlrph.wordpress.com/">Wordpress</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="http://flickr.com/arosamiran" class="link-8 text">Flickr</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="http://flickr.com/arosamiran">Flickr</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="http://github.com/arosamiran" class="link-9 text">Github</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="http://github.com/arosamiran">Github</a>
           </div>
           <div>
-          <a className="text" target="_blank" href="http://youtube.com/arosamiran" class="link-10 text">Youtube</a>
+          <a className="text card-panel blue-grey darken-3" target="_blank" href="http://youtube.com/arosamiran" >Youtube</a>
           </div>
           </div>
         </div>

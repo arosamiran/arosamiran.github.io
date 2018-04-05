@@ -6,11 +6,16 @@ body {
 
 @font-face {
   font-family: 'geosanslightregular';
-  src: url('fonts/geosanslight-webfont.woff2') format('woff2'),
-       url('fonts/geosanslight-webfont.woff') format('woff');
+  src: url('fonts/geosanslight-webfont.woff2') format('woff2'), url('fonts/geosanslight-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
 
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('fonts/opensans-light-webfont.woff2') format('woff2'), url('fonts/opensans-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1,
@@ -21,13 +26,12 @@ h5,
 h6 {
   font-family: geosanslightregular, sans-serif;
   color: whitesmoke;
-  padding: 20px 20px 0px 20px;
+  padding: 20px
 }
 
-h1{
+h1 {
   font-size: 3em;
 }
-
 
 .header div {
   display: inline-flex;
@@ -43,30 +47,51 @@ h1{
   margin: 20px auto;
 }
 
-.intro{
+.intro {
   padding: 10px;
 }
 
 .text {
   color: white;
-  font-family: Amaranth, sans-serif;
+  font-family: open_sanslight, sans-serif;
   font-size: 1.3em;
   margin: 20px;
+  font-weight: lighter;
   text-decoration: none;
 }
 
-.links div {
-  display: inline-block;
-  padding: 5px;
-}
-
-.url,.jay{
-  padding: 0 10px 10px 10px;
-  margin: 0 10px 10px 10px;
-  background-color: rgba(255,255,255,0.2);
-}
-
-.url a, .jay a{
+.url a,
+.jay a {
   text-decoration: none;
   color: #fff;
+}
+
+.aframe {
+  height: 500px;
+  display: flex;
+}
+
+.aframe h1 {
+  margin: auto;
+}
+
+a-scene {
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.url, .jay, .aframe{
+  background-color: rgba(255, 255, 255,0.2);
+  margin: 5px;
+}
+
+.links div a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  padding: 10PX;
+  margin: 0 10px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
