@@ -1,3 +1,7 @@
+body{
+  background-color: bisque;
+}
+
 article{
   display: flex;
 	align-items: stretch;
